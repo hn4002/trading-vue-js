@@ -14,7 +14,7 @@
         C<span class="t-vue-lspan" >{{ohlcv[3]}}</span>
         V<span class="t-vue-lspan" >{{ohlcv[4]}}</span>
     </div>
-    <div class="t-vue-ind" v-for="ind in this.indicators">
+    <div class="t-vue-ind" v-for="ind in this.indicators" v-bind:id="ind.id">
         <span class="t-vue-iname">{{ind.name}}</span>
         <button-group
             v-bind:buttons="common.buttons"
