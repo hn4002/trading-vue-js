@@ -1,5 +1,5 @@
 /*!
- * TradingVue.JS - v0.4.5 - Wed Apr 22 2020
+ * TradingVue.JS - v0.4.5 - Thu Apr 23 2020
  *     https://github.com/C451/trading-vue-js
  *     Copyright (c) 2019 c451 Code's All Right;
  *     Licensed under the MIT license
@@ -108,7 +108,7 @@ var arrayWithoutHoles = __webpack_require__(27);
 
 var iterableToArray = __webpack_require__(28);
 
-var unsupportedIterableToArray = __webpack_require__(23);
+var unsupportedIterableToArray = __webpack_require__(24);
 
 var nonIterableSpread = __webpack_require__(29);
 
@@ -154,19 +154,13 @@ module.exports = _createClass;
 
 /***/ }),
 /* 3 */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"extended.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAANElEQVR4nGNggABGEMEEIlhABAeI+AASF0AlHmAqA4kzKAAx8wGQuAMKwd6AoYzBAWonAwAcLwTgNfJ3RQAAAABJRU5ErkJggg==\",\"segment.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAATU1NJCQkCxcHIQAAAAN0Uk5TAP8SmutI5AAAACxJREFUeJxjYMACGAMgNAsLdpoVKi8AVe8A1QblQlWRKt0AoULw2w1zGxoAABdiAviQhF/mAAAAAElFTkSuQmCC\",\"add.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAH5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqPz8/Pj4+BQUFCQkJAQEBZGRkh4eHAgICEBAQNjY2g4ODgYGBAAAAAwMDeXl5d3d3GBgYERERgICAgICANDQ0PDw8Y2NjCAgIhYWFGhoaJycnOjo6YWFhgICAdXV14Y16sQAAACp0Uk5TAAILDxIKESEnJiYoKCgTKSkpKCAnKSkFKCkpJiDl/ycpKSA2JyYpKSkpOkQ+xgAAARdJREFUeJzllNt2gyAQRTWiRsHLoDU0GpPYmMv//2BMS+sgl6Z9bM8bi73gnJkBz/sn8lcBIUHofwtG8TpJKUuTLI6cYF7QEqRKynP71VX9AkhNXVlsbMQrLLQVGyPZLsGHWgPrCxMJwHUPlXa79NBp2et5d9f3u3m1XxatQNn7SagOXCUjCjYUDuqxcWlHj4MSfw12FDJchFViRN8+1qcQoUH6lR1L1mEMEErofB6WzEUwylzomfzOQGiOJdXiWH7mQoUyMa4WXJQWOBvLFvPCGxt6FSr5kyH0qi0YddNG2/pgCsOjff4ZTizXPNwKIzl56OoGg9d9Z/+5cs6On+CFCfevFQ3ZaTycx1YMbvDdRvjkp/lHdAcPXzokxcwfDwAAAABJRU5ErkJggg==\",\"cursor.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAxQTFRFAAAATU1NTU1NTU1NwlMHHwAAAAR0Uk5TAOvhxbpPrUkAAAAkSURBVHicY2BgYHBggAByabxg1WoGBq2pRCk9AKUbcND43AEAufYHlSuusE4AAAAASUVORK5CYII=\",\"display_off.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAU1QTFRFAAAAh4eHh4eHAAAAAAAAAAAAAwMDAAAAAAAAhoaGGBgYgYGBAAAAPz8/AgICg4ODCQkJhISEh4eHh4eHPj4+NjY2gYGBg4ODgYGBgYGBgoKCAQEBJycngoKChYWFEBAQg4ODCAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0hISEgYGBPDw8gYGBgYGBh4eHh4eHhYWFh4eHgoKChYWFgYGBgYGBg4ODhoaGg4ODYWFhgoKCBgYGdXV1goKCg4ODgYGBgICAgYGBAAAAg4ODhYWFhISEh4eHgoKChYWFOjo6goKCGhoah4eHh4eHh4eHgoKCh4eHeXl5hoaGgoKChISEgYGBgYGBgoKCY2NjgYGBgoKCh4eHgoKCgYGBhoaGg4ODhoaGhYWFh4eHgYGBhoaGhoaGhoaGg4ODgoKChISEgoKChYWFh4eHfKktUwAAAG90Uk5TACn/AhEFKA8SLCbxCigoVBNKUTYoJ/lh3PyAKSaTNiBtICYpISggKSkmJ0LEKef3lGxA8rn//+pcMSkpnCcptHPJKe0LUjnx5LzKKaMnX73hl64pLnhkzNSgKeLv17LQ+liIzaLe7PfTw5tFpz3K1fXR/gAAAgBJREFUeJzllNdXwjAUxknB0lIoCKVsGTIFQRAZ7r333nuv///R3LZ4mlDQZ/0ekp7b37n5bnITk+mfyDxv5Tir3fwjaElO5BIOKZFLJS1dQVfI0Y809TtEV+elo95RpFPWG+1go4fdQ5QybI8haaNBkM2ANbM09bnrwaPY7iFKrz7EMBdu7CHdVruXIt0M1hb+GKA3LTRKkp5lTA6Dg6xIkhaHhvQ1IlW/UCouQdJNJTRIpk1qO7+wUpcfpl537oBc7VNip3Gi/AmVPBAC1UrL6HXtSGVT+k2Yz0Focad07OMRf3P5BEbd63PFQx7HN+w61JoAm+uBlV48O/0jkLSMmtPCmQ8HwlYdykFV4/LJPp7e3hVyFdapHNehLk6PSjhSkBvwu/cFyJGIYvOyhoc1jjYQFGbygD4CWjoAMla/og3YoSw+KPhjPNoFcim4iFD+pFYA8zZ9WeYU5OBjZ3ORWyCfG03E+47kKpCIJTpGO4KP8XMgtw990xG/PBNTgmPEEXwf7P42oOdFIRAoBCtqTKL6Rcwq4Xsgh5xYC/mmSs6yJKk1YbnVeTq1NaEpmlHbmVn2EORkW2trF2ZzmHGTSUMGl1a9hp4ySRpdQ8yKGURpMmRIYg9pb1YPzg6kO79cLlE6bYFjEtv91bLEUxvhwbWwjY13BxUb9l8+mn9EX8x3Nki8ff5wAAAAAElFTkSuQmCC\",\"display_on.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAR1QTFRFAAAAh4eHgYGBAAAAAAAAgYGBAAAAAwMDAAAAAAAAgYGBg4ODGBgYgYGBhISEAAAAPz8/AgIChoaGCQkJhYWFPj4+NjY2goKCgYGBAQEBJycngYGBgoKCEBAQCAgIhISEKioqZGRkCgoKBQUFERERd3d3gYGBg4ODgYGBGxsbNDQ0hISEgoKCgoKChYWFPDw8gYGBgYGBhoaGgoKCg4ODgoKCgYGBgoKCgoKCgoKCg4ODgoKChoaGgoKCgYGBhoaGg4ODYWFhBgYGdXV1gYGBg4ODgoKCgICAg4ODg4ODhISEAAAAg4ODOjo6gYGBGhoaeXl5goKCgYGBgoKChYWFgoKChISEgoKCY2NjgYGBg4ODgYGBgYGBg4ODgYGBo8n54AAAAF90Uk5TACn/AhH3BSgPEuhUJvFACigoLBM2KCeA6ykm+pMgIEkmKSEoICn9XCkmJ0u6nDop4sUypGuEzLZ6vmCYLZ/dLykpJynUYa8pcllCC1Ip2ycpisl1PadFsintbsPQZdi/bTW7AAAB4UlEQVR4nOWUZ1fCMBSGSSGWFiq0UDbIkr2XbBwMxS0b1P//M0xK9XSiftX7oel585zkvfcmMRj+SRhvzRRlthm/BU3Ry3TYzofTsajpIOjw2iNAjIiddehvHXSdA0mkXEEdG0fkE1DEKXmkSVqVIA6rBmsktUgAWLWHoGp30UNclbtLmwQgoyya91wPTbFy0mQXJ5zJQO6BgXRjfH0iSkX5stHIXr5r0bB/lu8syjR8rzsFbR2SpX+5J2eMP3csLtYsEY2K8BeTFuE2jaVCBw7bHOBuxq16AXmpbui3LtIfbRLUHMY2q4lcFo2WB4KA1SUAlWumNEKCzyxBKZxVHvYGaFguCBx1vM/x0IPzoqQoj5SdP4mns2cCGhBsrgj0uaeUBtzMyxQN8w4mYROTW8+r0oANp8W5mf6WQw5aCYJ2o7ymPaKMi2uVpmWM4TW6tdImgGo1bT4nK6DbbsCc0AZSdmLEFszzHrh6riVvRrNA3/9SE8QLWQu+Gjto9+gE9NBMwr9zi83gFeeFTe11zpm1CHE3HeyVCSknf3MIDcFTbfJKdbR1L4xX49L+/BoillV5uPJqkshD3JWSgpNMXP/lcrD8+hO84MnDr5YpFHv0Fe99VjJ0GBRs2H74aP6R+ACr+TFvZNAQ1wAAAABJRU5ErkJggg==\",\"down.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAKVQTFRFAAAAg4ODgICAAAAAAAAAAAAACAgIAAAAAAAAAAAAAAAAOTk5hYWFEBAQfHx8ODg4dnZ2NDQ0XV1dGxsbKCgogICAFBQUIiIiZGRkgICAgICAFRUVAAAAgICAgICAgICAf39/Li4ugICAcHBwgoKCgICAgoKCgICAg4ODgYGBPj4+goKCgICAhISEgYGBgICAgoKCgICAgYGBgYGBf39/gICAgICAIdPQHAAAADd0Uk5TACn/KAIRIBMFDwooKyApKSknKSYmzCcmKfL7JRCUi2L3J7IpcLUrr0VbKXntNEnkMbxrUcG56CMpi50AAAFZSURBVHic5ZRpf4MgDIeFKFatWm/tfW091u7evv9Hm1Acoujm2y0vFPH5Jf+EEE37J6bblmlatv4jaBCI4rMfR0CMXtAEJ0fccgfM7tAkQHXzArdDxggmqGETGCnJWROkNlOwOqhIhKCtgbSicw1uK/dATSK0aRatIzytA8ik4XSiyJnLSm+VPxULgeyLI3uHRJH+qcB4WZGrKb4c20WwI7b3iUt74OS6XD+xZWrXUCtme0uKTvfcJ65CZFa9VOebqwXmft+oT8yF+/VymT4XeGB+Xx8L+j4gBcoFIDT+oMz6Qp93Y74pCeBpUXaLuW0rUk6r1iv3nP322ewYkgv2nZIvgpSPQDrY5wTjRJDNg9XAE/+uSXIVX812GdKEmtvR2rtWaw+5MAOuofJy79SXu9TgBl4d9DZdI0NjgyiswNCB/qk1J5Bmvp+lQOa9IJNhW4bxm6H5R+wLQYMSQXZNzbcAAAAASUVORK5CYII=\",\"price_range.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAIUlEQVR4nGNggAPm/w9gTA4QIQMitECEJ1yMEgLNDiAAADfgBMRu78GgAAAAAElFTkSuQmCC\",\"remove.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAK5QTFRFAAAAh4eHgICAAAAAAAAAh4eHAAAAAwMDAAAAAAAAgICAGBgYAAAAPz8/AgICgICACQkJhoaGhoaGgICAPj4+NjY2gYGBg4ODgYGBAQEBJycngoKCEBAQgICAgICACAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0gICAPDw8YWFhBgYGdXV1gICAg4ODgICAAAAAOjo6GhoaeXl5gICAhYWFY2NjhYWFgICA9O0oCgAAADp0Uk5TACn/AhErBSgPEvEmCigowxMuMcgoJ7hWrCkmdCD6vSAmKSEoICkpJie6KSknKSkp0wspJynCMik11rrLte8AAAFwSURBVHic5ZTXkoIwFIZNAAPSpKkoRQV7Wcva3v/FFiRmEwise7t7bs7MP98k/ylJq/VPQjjKiiJrwo+gON0uxro7XiRTsRHs+voE4JjoRrf+6sD7AFTMvaDGRht9glLMUJtLqmUwD5XDCohHAmBUPQSV27GHtFK7xycBWJab5uPaR+Hlmue7GfZxHwyWFHVMQghXFgD2A8IOZtfssdNJIXcyFEaSfchzp9BuMVP+Fhvr5Qh0nGfqYTGhm3BcYFUaQBKOhMWzRqHyGFRY03ppQ5lCFZ30RloVZGQTaa3QqEt0OyrQnkSkk8I1YJkvAwPCMgY0UpbzXRZhVbosIWGbZTLNQszGMCM42FJEjWDDjIAMtp+xj6x2K+/DqNDc0r4Yc8yGl3uer2aIyT1iyd8sYSuY8cldZbVrH4zPebTvP8OMNSoedj6XzDyk3pwG98u0/ufqGu7tBW5c1PxriXFyHq5PQxXFzeDThvbmp/lH4gt6WxfZ03H8DwAAAABJRU5ErkJggg==\",\"settings.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAW5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqQEBAPj4+BQUFCAgIAQEBPz8/ZWVlh4eHZGRkAgICCQkJDw8PNjY2g4ODgoKCNTU1EBAQAAAAAwMDeXl5d3d3AAAAGBgYAAAAERERioqKgoKCgoKCgoKCgYGBgoKChISEhoaGNDQ0g4ODgICAgICAgICAgYGBgYGBhYWFgICAgICAPT09AAAAgYGBgICAgICAgICAgICAY2NjCAgIgICAgICAhYWFhYWFgYGBHBwcgICAhYWFGhoagYGBgYGBg4ODhoaGJycnAAAAhISEgICAg4ODPDw8AAAAgoKCgICAhISEOjo6h4eHgoKCgYGBgICAf39/gYGBgoKCgICAGBgYgYGBg4ODg4ODgICACwsLgYGBgICAgYGBgYGBgYGBgICAgYGBYWFhf39/g4ODPj4+gYGBg4ODgICAhYWFgoKCgYGBgICAgYGBgoKCdXV1T0kC9QAAAHp0Uk5TAAILDxMKESEnJiYpKSgTKSgpKSkoEyAnKSknIAYoKSkFJQEgKl94jYVvVC4nU9f/+K8pOu71KBCi3NPq/ikg0e01Nokm1UUnsZVqQSYOT9lrKRJz5lIpK12jyu+sesgnhGVLxCG55a6Um+GaKfJCKKRgKUt8ocergymDQ9knAAABsElEQVR4nOWUV1vCMBSGg1AQpBZrcVdE3KJxo4LgnuCoe4F7orjHv7doTk3bgF7rd5OnX94nZ+SkCP0TWQqsNpuVs/wI2h2FTleR2+XkHfa8YLHgKRGJSj2SN3fosvIKkVJlVXWONGrkWtEgn1zHJP1GMCs/g7XILFIUpXoTWmaKTnIImGovh72Gxqbmlta2dvgOGpsmQO0dnfhTXd3E6JH0pN1DNnr7MFE/HDsQ0qEO6Pxg9sCh4XDkGx2J6sovBD+G8eiYuo5PxLTKeLoJBZNgT2EcnjY0YYajUKsL7Fk1gcjU3PwChcYTFGorAnsRqlpa1tAVhUbdmr+6RtjIOlgbCjMBUdzc2t7ZzbJ7zAQ4p6GSfRVNwkeKLsvCg31w2JBdjlT0GDxZNzEnpcQ+xWfnFxeXVyp6Tay07gq+L/YUOoBvbomV0V8skiq//DutWfeEfJD1JPLCED4+Pb8kX986tApNQ4iqfSJT76bRzvlgBPODQXW/foYqK5lyeBeYJEL1gaoeGnwIBhjRoQ9SZgTAdEbO/9cKRfmZ+MpGPCVHQ3nBzzS4hKIkuNyh/5g+ALiAXSSas9hwAAAAAElFTkSuQmCC\",\"trash.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAALUlEQVR4nGNgAIN6ENHQACX4//9gYBBgYIESYC4LkA0lPEkmGFAI5v8PILYCAHygDJxlK0RUAAAAAElFTkSuQmCC\",\"up.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAMZQTFRFAAAAh4eHgICAAAAAAAAAAAAAAwMDAAAAAAAAGBgYAAAAPz8/AgICCQkJgICAh4eHPj4+NjY2AQEBJycnEBAQgICAgICACAgIKioqZGRkCgoKBQUFgYGBERERd3d3gYGBGxsbNDQ0gICAgYGBPDw8gYGBh4eHgICAYWFhBgYGgYGBdXV1goKCg4ODhYWFgICAgoKCAAAAhISEOjo6gICAGhoagYGBeXl5hoaGgICAY2Njg4ODgoKCgoKCgYGBgoKCg4ODgoKC64uw1gAAAEJ0Uk5TACn/AhEFKA8SJgooKBP7KignKSYg9c0gJikhKLQgKSkmJ7ywKY8s5SknlClxKTMpXwtFKe0neiku8ClKWmSbbFFjM5GHSgAAAW5JREFUeJzllGd/gjAQxk3AMFWWOHDvVa2rVbu//5cqhJWQQO3b9nkVjv/v7rnLKJX+iYS9JMuSKvwIiu3loKkZzYHXFgvBiqW1QKSWplfySzvmAyDUN50cG2X0DDLqoTKXVLJgIIXDCohHAqCzHhymeuShy/Ru8kkAhtmhWUTvW9fdEnPQaVLU0n8XF0L3kn5P6LTtZPKgNoK+RrUkcGtQ7S9TsgOxxinrkUPYD+LwLCIh7CTsWSVQqRmTuPqpitlZFLQlApXjrsYBc335wOw47ksmUSMMrgKi/gnAE/awCqNHmTUwDf5X34LlBuedsgbUsK15kPMxTIXzzvFSIdsSPBw7nGD1K+7bL3F9xStEnZhoCw71TbpL71GBBbUF1MZmZWTOi97PI3eIJn9zCEtOj0+umaOde2EszqW9/xr6rM54WFtc0vfQNak57Ibd/Jerohu3GFwYqPjVEhve2Z4cbQU1ikFsQ73z0fwj+ga3VBezGuggFQAAAABJRU5ErkJggg==\"}");
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayWithHoles = __webpack_require__(30);
 
 var iterableToArrayLimit = __webpack_require__(31);
 
-var unsupportedIterableToArray = __webpack_require__(23);
+var unsupportedIterableToArray = __webpack_require__(24);
 
 var nonIterableRest = __webpack_require__(32);
 
@@ -175,6 +169,12 @@ function _slicedToArray(arr, i) {
 }
 
 module.exports = _slicedToArray;
+
+/***/ }),
+/* 4 */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"extended.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAANElEQVR4nGNggABGEMEEIlhABAeI+AASF0AlHmAqA4kzKAAx8wGQuAMKwd6AoYzBAWonAwAcLwTgNfJ3RQAAAABJRU5ErkJggg==\",\"segment.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAATU1NJCQkCxcHIQAAAAN0Uk5TAP8SmutI5AAAACxJREFUeJxjYMACGAMgNAsLdpoVKi8AVe8A1QblQlWRKt0AoULw2w1zGxoAABdiAviQhF/mAAAAAElFTkSuQmCC\",\"add.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAH5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqPz8/Pj4+BQUFCQkJAQEBZGRkh4eHAgICEBAQNjY2g4ODgYGBAAAAAwMDeXl5d3d3GBgYERERgICAgICANDQ0PDw8Y2NjCAgIhYWFGhoaJycnOjo6YWFhgICAdXV14Y16sQAAACp0Uk5TAAILDxIKESEnJiYoKCgTKSkpKCAnKSkFKCkpJiDl/ycpKSA2JyYpKSkpOkQ+xgAAARdJREFUeJzllNt2gyAQRTWiRsHLoDU0GpPYmMv//2BMS+sgl6Z9bM8bi73gnJkBz/sn8lcBIUHofwtG8TpJKUuTLI6cYF7QEqRKynP71VX9AkhNXVlsbMQrLLQVGyPZLsGHWgPrCxMJwHUPlXa79NBp2et5d9f3u3m1XxatQNn7SagOXCUjCjYUDuqxcWlHj4MSfw12FDJchFViRN8+1qcQoUH6lR1L1mEMEErofB6WzEUwylzomfzOQGiOJdXiWH7mQoUyMa4WXJQWOBvLFvPCGxt6FSr5kyH0qi0YddNG2/pgCsOjff4ZTizXPNwKIzl56OoGg9d9Z/+5cs6On+CFCfevFQ3ZaTycx1YMbvDdRvjkp/lHdAcPXzokxcwfDwAAAABJRU5ErkJggg==\",\"cursor.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAxQTFRFAAAATU1NTU1NTU1NwlMHHwAAAAR0Uk5TAOvhxbpPrUkAAAAkSURBVHicY2BgYHBggAByabxg1WoGBq2pRCk9AKUbcND43AEAufYHlSuusE4AAAAASUVORK5CYII=\",\"display_off.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAU1QTFRFAAAAh4eHh4eHAAAAAAAAAAAAAwMDAAAAAAAAhoaGGBgYgYGBAAAAPz8/AgICg4ODCQkJhISEh4eHh4eHPj4+NjY2gYGBg4ODgYGBgYGBgoKCAQEBJycngoKChYWFEBAQg4ODCAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0hISEgYGBPDw8gYGBgYGBh4eHh4eHhYWFh4eHgoKChYWFgYGBgYGBg4ODhoaGg4ODYWFhgoKCBgYGdXV1goKCg4ODgYGBgICAgYGBAAAAg4ODhYWFhISEh4eHgoKChYWFOjo6goKCGhoah4eHh4eHh4eHgoKCh4eHeXl5hoaGgoKChISEgYGBgYGBgoKCY2NjgYGBgoKCh4eHgoKCgYGBhoaGg4ODhoaGhYWFh4eHgYGBhoaGhoaGhoaGg4ODgoKChISEgoKChYWFh4eHfKktUwAAAG90Uk5TACn/AhEFKA8SLCbxCigoVBNKUTYoJ/lh3PyAKSaTNiBtICYpISggKSkmJ0LEKef3lGxA8rn//+pcMSkpnCcptHPJKe0LUjnx5LzKKaMnX73hl64pLnhkzNSgKeLv17LQ+liIzaLe7PfTw5tFpz3K1fXR/gAAAgBJREFUeJzllNdXwjAUxknB0lIoCKVsGTIFQRAZ7r333nuv///R3LZ4mlDQZ/0ekp7b37n5bnITk+mfyDxv5Tir3fwjaElO5BIOKZFLJS1dQVfI0Y809TtEV+elo95RpFPWG+1go4fdQ5QybI8haaNBkM2ANbM09bnrwaPY7iFKrz7EMBdu7CHdVruXIt0M1hb+GKA3LTRKkp5lTA6Dg6xIkhaHhvQ1IlW/UCouQdJNJTRIpk1qO7+wUpcfpl537oBc7VNip3Gi/AmVPBAC1UrL6HXtSGVT+k2Yz0Focad07OMRf3P5BEbd63PFQx7HN+w61JoAm+uBlV48O/0jkLSMmtPCmQ8HwlYdykFV4/LJPp7e3hVyFdapHNehLk6PSjhSkBvwu/cFyJGIYvOyhoc1jjYQFGbygD4CWjoAMla/og3YoSw+KPhjPNoFcim4iFD+pFYA8zZ9WeYU5OBjZ3ORWyCfG03E+47kKpCIJTpGO4KP8XMgtw990xG/PBNTgmPEEXwf7P42oOdFIRAoBCtqTKL6Rcwq4Xsgh5xYC/mmSs6yJKk1YbnVeTq1NaEpmlHbmVn2EORkW2trF2ZzmHGTSUMGl1a9hp4ySRpdQ8yKGURpMmRIYg9pb1YPzg6kO79cLlE6bYFjEtv91bLEUxvhwbWwjY13BxUb9l8+mn9EX8x3Nki8ff5wAAAAAElFTkSuQmCC\",\"display_on.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAR1QTFRFAAAAh4eHgYGBAAAAAAAAgYGBAAAAAwMDAAAAAAAAgYGBg4ODGBgYgYGBhISEAAAAPz8/AgIChoaGCQkJhYWFPj4+NjY2goKCgYGBAQEBJycngYGBgoKCEBAQCAgIhISEKioqZGRkCgoKBQUFERERd3d3gYGBg4ODgYGBGxsbNDQ0hISEgoKCgoKChYWFPDw8gYGBgYGBhoaGgoKCg4ODgoKCgYGBgoKCgoKCgoKCg4ODgoKChoaGgoKCgYGBhoaGg4ODYWFhBgYGdXV1gYGBg4ODgoKCgICAg4ODg4ODhISEAAAAg4ODOjo6gYGBGhoaeXl5goKCgYGBgoKChYWFgoKChISEgoKCY2NjgYGBg4ODgYGBgYGBg4ODgYGBo8n54AAAAF90Uk5TACn/AhH3BSgPEuhUJvFACigoLBM2KCeA6ykm+pMgIEkmKSEoICn9XCkmJ0u6nDop4sUypGuEzLZ6vmCYLZ/dLykpJynUYa8pcllCC1Ip2ycpisl1PadFsintbsPQZdi/bTW7AAAB4UlEQVR4nOWUZ1fCMBSGSSGWFiq0UDbIkr2XbBwMxS0b1P//M0xK9XSiftX7oel585zkvfcmMRj+SRhvzRRlthm/BU3Ry3TYzofTsajpIOjw2iNAjIiddehvHXSdA0mkXEEdG0fkE1DEKXmkSVqVIA6rBmsktUgAWLWHoGp30UNclbtLmwQgoyya91wPTbFy0mQXJ5zJQO6BgXRjfH0iSkX5stHIXr5r0bB/lu8syjR8rzsFbR2SpX+5J2eMP3csLtYsEY2K8BeTFuE2jaVCBw7bHOBuxq16AXmpbui3LtIfbRLUHMY2q4lcFo2WB4KA1SUAlWumNEKCzyxBKZxVHvYGaFguCBx1vM/x0IPzoqQoj5SdP4mns2cCGhBsrgj0uaeUBtzMyxQN8w4mYROTW8+r0oANp8W5mf6WQw5aCYJ2o7ymPaKMi2uVpmWM4TW6tdImgGo1bT4nK6DbbsCc0AZSdmLEFszzHrh6riVvRrNA3/9SE8QLWQu+Gjto9+gE9NBMwr9zi83gFeeFTe11zpm1CHE3HeyVCSknf3MIDcFTbfJKdbR1L4xX49L+/BoillV5uPJqkshD3JWSgpNMXP/lcrD8+hO84MnDr5YpFHv0Fe99VjJ0GBRs2H74aP6R+ACr+TFvZNAQ1wAAAABJRU5ErkJggg==\",\"down.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAKVQTFRFAAAAg4ODgICAAAAAAAAAAAAACAgIAAAAAAAAAAAAAAAAOTk5hYWFEBAQfHx8ODg4dnZ2NDQ0XV1dGxsbKCgogICAFBQUIiIiZGRkgICAgICAFRUVAAAAgICAgICAgICAf39/Li4ugICAcHBwgoKCgICAgoKCgICAg4ODgYGBPj4+goKCgICAhISEgYGBgICAgoKCgICAgYGBgYGBf39/gICAgICAIdPQHAAAADd0Uk5TACn/KAIRIBMFDwooKyApKSknKSYmzCcmKfL7JRCUi2L3J7IpcLUrr0VbKXntNEnkMbxrUcG56CMpi50AAAFZSURBVHic5ZRpf4MgDIeFKFatWm/tfW091u7evv9Hm1Acoujm2y0vFPH5Jf+EEE37J6bblmlatv4jaBCI4rMfR0CMXtAEJ0fccgfM7tAkQHXzArdDxggmqGETGCnJWROkNlOwOqhIhKCtgbSicw1uK/dATSK0aRatIzytA8ik4XSiyJnLSm+VPxULgeyLI3uHRJH+qcB4WZGrKb4c20WwI7b3iUt74OS6XD+xZWrXUCtme0uKTvfcJ65CZFa9VOebqwXmft+oT8yF+/VymT4XeGB+Xx8L+j4gBcoFIDT+oMz6Qp93Y74pCeBpUXaLuW0rUk6r1iv3nP322ewYkgv2nZIvgpSPQDrY5wTjRJDNg9XAE/+uSXIVX812GdKEmtvR2rtWaw+5MAOuofJy79SXu9TgBl4d9DZdI0NjgyiswNCB/qk1J5Bmvp+lQOa9IJNhW4bxm6H5R+wLQYMSQXZNzbcAAAAASUVORK5CYII=\",\"price_range.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAAIUlEQVR4nGNggAPm/w9gTA4QIQMitECEJ1yMEgLNDiAAADfgBMRu78GgAAAAAElFTkSuQmCC\",\"remove.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAK5QTFRFAAAAh4eHgICAAAAAAAAAh4eHAAAAAwMDAAAAAAAAgICAGBgYAAAAPz8/AgICgICACQkJhoaGhoaGgICAPj4+NjY2gYGBg4ODgYGBAQEBJycngoKCEBAQgICAgICACAgIKioqZGRkCgoKBQUFERERd3d3gYGBGxsbNDQ0gICAPDw8YWFhBgYGdXV1gICAg4ODgICAAAAAOjo6GhoaeXl5gICAhYWFY2NjhYWFgICA9O0oCgAAADp0Uk5TACn/AhErBSgPEvEmCigowxMuMcgoJ7hWrCkmdCD6vSAmKSEoICkpJie6KSknKSkp0wspJynCMik11rrLte8AAAFwSURBVHic5ZTXkoIwFIZNAAPSpKkoRQV7Wcva3v/FFiRmEwise7t7bs7MP98k/ylJq/VPQjjKiiJrwo+gON0uxro7XiRTsRHs+voE4JjoRrf+6sD7AFTMvaDGRht9glLMUJtLqmUwD5XDCohHAmBUPQSV27GHtFK7xycBWJab5uPaR+Hlmue7GfZxHwyWFHVMQghXFgD2A8IOZtfssdNJIXcyFEaSfchzp9BuMVP+Fhvr5Qh0nGfqYTGhm3BcYFUaQBKOhMWzRqHyGFRY03ppQ5lCFZ30RloVZGQTaa3QqEt0OyrQnkSkk8I1YJkvAwPCMgY0UpbzXRZhVbosIWGbZTLNQszGMCM42FJEjWDDjIAMtp+xj6x2K+/DqNDc0r4Yc8yGl3uer2aIyT1iyd8sYSuY8cldZbVrH4zPebTvP8OMNSoedj6XzDyk3pwG98u0/ufqGu7tBW5c1PxriXFyHq5PQxXFzeDThvbmp/lH4gt6WxfZ03H8DwAAAABJRU5ErkJggg==\",\"settings.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAW5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKBgYGGxsbKioqQEBAPj4+BQUFCAgIAQEBPz8/ZWVlh4eHZGRkAgICCQkJDw8PNjY2g4ODgoKCNTU1EBAQAAAAAwMDeXl5d3d3AAAAGBgYAAAAERERioqKgoKCgoKCgoKCgYGBgoKChISEhoaGNDQ0g4ODgICAgICAgICAgYGBgYGBhYWFgICAgICAPT09AAAAgYGBgICAgICAgICAgICAY2NjCAgIgICAgICAhYWFhYWFgYGBHBwcgICAhYWFGhoagYGBgYGBg4ODhoaGJycnAAAAhISEgICAg4ODPDw8AAAAgoKCgICAhISEOjo6h4eHgoKCgYGBgICAf39/gYGBgoKCgICAGBgYgYGBg4ODg4ODgICACwsLgYGBgICAgYGBgYGBgYGBgICAgYGBYWFhf39/g4ODPj4+gYGBg4ODgICAhYWFgoKCgYGBgICAgYGBgoKCdXV1T0kC9QAAAHp0Uk5TAAILDxMKESEnJiYpKSgTKSgpKSkoEyAnKSknIAYoKSkFJQEgKl94jYVvVC4nU9f/+K8pOu71KBCi3NPq/ikg0e01Nokm1UUnsZVqQSYOT9lrKRJz5lIpK12jyu+sesgnhGVLxCG55a6Um+GaKfJCKKRgKUt8ocergymDQ9knAAABsElEQVR4nOWUV1vCMBSGg1AQpBZrcVdE3KJxo4LgnuCoe4F7orjHv7doTk3bgF7rd5OnX94nZ+SkCP0TWQqsNpuVs/wI2h2FTleR2+XkHfa8YLHgKRGJSj2SN3fosvIKkVJlVXWONGrkWtEgn1zHJP1GMCs/g7XILFIUpXoTWmaKTnIImGovh72Gxqbmlta2dvgOGpsmQO0dnfhTXd3E6JH0pN1DNnr7MFE/HDsQ0qEO6Pxg9sCh4XDkGx2J6sovBD+G8eiYuo5PxLTKeLoJBZNgT2EcnjY0YYajUKsL7Fk1gcjU3PwChcYTFGorAnsRqlpa1tAVhUbdmr+6RtjIOlgbCjMBUdzc2t7ZzbJ7zAQ4p6GSfRVNwkeKLsvCg31w2JBdjlT0GDxZNzEnpcQ+xWfnFxeXVyp6Tay07gq+L/YUOoBvbomV0V8skiq//DutWfeEfJD1JPLCED4+Pb8kX986tApNQ4iqfSJT76bRzvlgBPODQXW/foYqK5lyeBeYJEL1gaoeGnwIBhjRoQ9SZgTAdEbO/9cKRfmZ+MpGPCVHQ3nBzzS4hKIkuNyh/5g+ALiAXSSas9hwAAAAAElFTkSuQmCC\",\"trash.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAATU1NkJ+rOQAAAAJ0Uk5TAP9bkSK1AAAALUlEQVR4nGNgAIN6ENHQACX4//9gYBBgYIESYC4LkA0lPEkmGFAI5v8PILYCAHygDJxlK0RUAAAAAElFTkSuQmCC\",\"up.png\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAMZQTFRFAAAAh4eHgICAAAAAAAAAAAAAAwMDAAAAAAAAGBgYAAAAPz8/AgICCQkJgICAh4eHPj4+NjY2AQEBJycnEBAQgICAgICACAgIKioqZGRkCgoKBQUFgYGBERERd3d3gYGBGxsbNDQ0gICAgYGBPDw8gYGBh4eHgICAYWFhBgYGgYGBdXV1goKCg4ODhYWFgICAgoKCAAAAhISEOjo6gICAGhoagYGBeXl5hoaGgICAY2Njg4ODgoKCgoKCgYGBgoKCg4ODgoKC64uw1gAAAEJ0Uk5TACn/AhEFKA8SJgooKBP7KignKSYg9c0gJikhKLQgKSkmJ7ywKY8s5SknlClxKTMpXwtFKe0neiku8ClKWmSbbFFjM5GHSgAAAW5JREFUeJzllGd/gjAQxk3AMFWWOHDvVa2rVbu//5cqhJWQQO3b9nkVjv/v7rnLKJX+iYS9JMuSKvwIiu3loKkZzYHXFgvBiqW1QKSWplfySzvmAyDUN50cG2X0DDLqoTKXVLJgIIXDCohHAqCzHhymeuShy/Ru8kkAhtmhWUTvW9fdEnPQaVLU0n8XF0L3kn5P6LTtZPKgNoK+RrUkcGtQ7S9TsgOxxinrkUPYD+LwLCIh7CTsWSVQqRmTuPqpitlZFLQlApXjrsYBc335wOw47ksmUSMMrgKi/gnAE/awCqNHmTUwDf5X34LlBuedsgbUsK15kPMxTIXzzvFSIdsSPBw7nGD1K+7bL3F9xStEnZhoCw71TbpL71GBBbUF1MZmZWTOi97PI3eIJn9zCEtOj0+umaOde2EszqW9/xr6rM54WFtc0vfQNak57Ibd/Jerohu3GFwYqPjVEhve2Z4cbQU1ikFsQ73z0fwj+ga3VBezGuggFQAAAABJRU5ErkJggg==\"}");
 
 /***/ }),
 /* 5 */
@@ -3393,67 +3393,6 @@ module.exports = _typeof;
 
 /***/ }),
 /* 20 */
-/***/ (function(module, exports) {
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-module.exports = _defineProperty;
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(54);
-
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports) {
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
-  return arr2;
-}
-
-module.exports = _arrayLikeToArray;
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(22);
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(n);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
-}
-
-module.exports = _unsupportedIterableToArray;
-
-/***/ }),
-/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -3675,6 +3614,67 @@ IndexedArray.prototype.getRange = function (begin, end) {
     return this.data.slice(start, finish + 1);
 };
 
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+module.exports = _defineProperty;
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(54);
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+module.exports = _arrayLikeToArray;
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(23);
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(n);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+
+module.exports = _unsupportedIterableToArray;
 
 /***/ }),
 /* 25 */
@@ -4052,7 +4052,7 @@ module.exports = _asyncToGenerator;
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(22);
+var arrayLikeToArray = __webpack_require__(23);
 
 function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return arrayLikeToArray(arr);
@@ -5432,6 +5432,10 @@ Chartvue_type_template_id_4d06a4de_render._withStripped = true
 
 // CONCATENATED MODULE: ./src/components/Chart.vue?vue&type=template&id=4d06a4de&
 
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
+var slicedToArray = __webpack_require__(3);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
+
 // CONCATENATED MODULE: ./src/stuff/context.js
 // Canvas context for text measurments
 function Context($p) {
@@ -5442,12 +5446,8 @@ function Context($p) {
 }
 
 /* harmony default export */ var context = (Context);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
-var slicedToArray = __webpack_require__(4);
-var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray);
-
 // EXTERNAL MODULE: ./node_modules/arrayslicer/lib/index.js
-var lib = __webpack_require__(24);
+var lib = __webpack_require__(20);
 var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
 // CONCATENATED MODULE: ./src/stuff/utils.js
@@ -5568,14 +5568,30 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
     try {
       var ia = new lib_default.a(arr, "0");
-      return ia.getRange(t1, t2);
+      var res = ia.getRange(t1, t2);
+      return [res];
     } catch (e) {
       // Something wrong with fancy slice lib
       // Fast fix: fallback to filter
-      return arr.filter(function (x) {
+      return [arr.filter(function (x) {
         return x[0] >= t1 && x[0] <= t2;
-      });
+      })];
     }
+  },
+  // Fast filter (index-based)
+  fast_filter_i: function fast_filter_i(arr, t1, t2) {
+    if (!arr.length) return arr;
+    var i1 = Math.floor(t1);
+    if (i1 < 0) i1 = 0;
+    var i2 = Math.floor(t2 + 1);
+    var res = arr.slice(i1, i2);
+    return [res, i1];
+  },
+  // Nearest indexes (left and right)
+  fast_nearest: function fast_nearest(arr, t1) {
+    var ia = new lib_default.a(arr, "0");
+    ia.fetch(t1);
+    return [ia.nextlow, ia.nexthigh];
   },
   now: function now() {
     return new Date().getTime();
@@ -5618,11 +5634,13 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 // Layout functional interface
 
 /* harmony default export */ var layout_fn = (function (self, range) {
+  var ib = self.ti_map.ib;
+  var dt = range[1] - range[0];
+  var r = self.spacex / dt;
   Object.assign(self, {
     // Time to screen coordinates
     t2screen: function t2screen(t) {
-      var dt = range[1] - range[0];
-      var r = self.spacex / dt;
+      if (ib) t = self.ti_map.smth2i(t);
       return Math.floor((t - range[0]) * r) - 0.5;
     },
     // $ to screen coordinates
@@ -5648,9 +5666,9 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
     },
     // Screen-X to timestamp
     screen2t: function screen2t(x) {
-      var dt = range[1] - range[0];
-      var r = self.spacex / dt;
-      return Math.floor(range[0] + x / r);
+      // TODO: most likely Math.floor not needed
+      // return Math.floor(range[0] + x / r)
+      return range[0] + x / r;
     },
     // $-axis nearest step
     $_magnet: function $_magnet(price) {},
@@ -5689,8 +5707,11 @@ function GridMaker(id, params) {
       $p = params.$p,
       layers_meta = params.layers_meta,
       height = params.height,
-      y_t = params.y_t;
-  var self = {};
+      y_t = params.y_t,
+      ti_map = params.ti_map;
+  var self = {
+    ti_map: ti_map
+  };
   var lm = layers_meta[id];
   var y_range_fn = null;
 
@@ -5853,10 +5874,11 @@ function GridMaker(id, params) {
 
 
   function time_step() {
-    var xrange = range[1] - range[0];
+    var k = ti_map.ib ? 60000 : 1;
+    var xrange = (range[1] - range[0]) * k;
     var m = xrange * ($p.config.GRIDX / $p.width);
     var s = grid_maker_TIMESCALES;
-    return utils.nearest_a(m, s)[1];
+    return utils.nearest_a(m, s)[1] / k;
   } // Select nearest good-loking $ step (m is target scale)
 
 
@@ -6012,6 +6034,7 @@ function Layout(params) {
       range = params.range,
       ctx = params.ctx,
       layers_meta = params.layers_meta,
+      ti_map = params.ti_map,
       $p = params.$props,
       y_ts = params.y_transforms;
   offsub = offsub.filter(function (x, i) {
@@ -6066,12 +6089,6 @@ function Layout(params) {
     return hs;
   }
 
-  function t2screen(t) {
-    var dt = range[1] - range[0];
-    var r = self.spacex / dt;
-    return Math.floor((t - range[0]) * r);
-  }
-
   function candles_n_vol() {
     self.candles = [];
     self.volume = [];
@@ -6087,7 +6104,7 @@ function Layout(params) {
 
     for (var i = 0; i < sub.length; i++) {
       var p = sub[i];
-      mid = t2screen(p[0]);
+      mid = self.t2screen(p[0]) + 0.5;
       self.candles.push({
         x: mid,
         w: self.px_step * $p.config.CANDLEW,
@@ -6124,6 +6141,7 @@ function Layout(params) {
     ctx: ctx,
     $p: $p,
     layers_meta: layers_meta,
+    ti_map: ti_map,
     height: hs[0],
     y_t: y_ts[0]
   };
@@ -8617,6 +8635,7 @@ function layout_cnv(self) {
       avg_w,
       mid,
       prev = undefined; // Subset interval against main interval
+  // TODO: interval detection can be incorrect in IB mode
 
   var interval2 = utils.detect_interval(sub);
   var ratio = interval2 / $p.interval;
@@ -9473,10 +9492,10 @@ function tool_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) 
   }
 });
 // EXTERNAL MODULE: ./src/stuff/icons.json
-var icons = __webpack_require__(3);
+var icons = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
-var defineProperty = __webpack_require__(20);
+var defineProperty = __webpack_require__(21);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 
 // CONCATENATED MODULE: ./src/components/primitives/pin.js
@@ -9572,7 +9591,11 @@ var pin_Pin = /*#__PURE__*/function () {
       this.y$ = this.comp.$props.cursor.y$;
       this.y = this.comp.$props.cursor.y;
       this.t = this.comp.$props.cursor.t;
-      this.x = this.comp.$props.cursor.x; // Reset the settings attahed to the pin (position)
+      this.x = this.comp.$props.cursor.x; // Save pin as time in IB mode
+      //if (this.layout.ti_map.ib) {
+      //    this.t = this.layout.ti_map.i2t(this.t )
+      //}
+      // Reset the settings attahed to the pin (position)
 
       this.comp.$emit('change-settings', defineProperty_default()({}, this.name, [this.t, this.y$]));
     }
@@ -9584,7 +9607,11 @@ var pin_Pin = /*#__PURE__*/function () {
       this.y$ = data[1];
       this.y = this.layout.$2screen(this.y$);
       this.t = data[0];
-      this.x = this.layout.t2screen(this.t);
+      this.x = this.layout.t2screen(this.t); // TODO: Save pin as time in IB mode
+      //if (this.layout.ti_map.ib) {
+      //    this.t = this.layout.ti_map.i2t(this.t )
+      //}
+
       if (emit) this.comp.$emit('change-settings', defineProperty_default()({}, this.name, [this.t, this.y$]));
     }
   }, {
@@ -10969,7 +10996,6 @@ LegendButtonvue_type_template_id_1ad87362_render._withStripped = true
   },
   methods: {
     onclick: function onclick() {
-      console.log("legend-button-clicked");
       this.$emit('legend-button-click', {
         button: this.$props.id,
         type: this.data_type,
@@ -11522,7 +11548,7 @@ var botbar_Botbar = /*#__PURE__*/function () {
 
       this.ctx.stroke();
       this.apply_shaders();
-      if (this.$p.cursor.x && this.$p.cursor.t) this.panel();
+      if (this.$p.cursor.x && this.$p.cursor.t !== undefined) this.panel();
     }
   }, {
     key: "apply_shaders",
@@ -11563,6 +11589,7 @@ var botbar_Botbar = /*#__PURE__*/function () {
   }, {
     key: "format_date",
     value: function format_date(t) {
+      t = this.grid_0.ti_map.i2t(t);
       t += new Date(t).getTimezoneOffset() * botbar_MINUTE;
       var d = new Date(t);
       if (utils.year_start(t) === t) return d.getFullYear();
@@ -11576,6 +11603,7 @@ var botbar_Botbar = /*#__PURE__*/function () {
     key: "format_cursor_x",
     value: function format_cursor_x() {
       var t = this.$p.cursor.t;
+      t = this.grid_0.ti_map.i2t(t);
       var ti = this.$p.interval;
       t += new Date(t).getTimezoneOffset() * botbar_MINUTE;
       var d = new Date(t);
@@ -11805,7 +11833,183 @@ var Keyboard_component = normalizeComponent(
 if (false) { var Keyboard_api; }
 Keyboard_component.options.__file = "src/components/Keyboard.vue"
 /* harmony default export */ var Keyboard = (Keyboard_component.exports);
+// CONCATENATED MODULE: ./src/components/js/ti_mapping.js
+
+
+
+// Time-index mapping (for non-linear t-axis)
+
+var MAX_ARR = Math.pow(2, 32);
+
+var ti_mapping_TI = /*#__PURE__*/function () {
+  function TI() {
+    classCallCheck_default()(this, TI);
+
+    this.ib = false;
+  }
+
+  createClass_default()(TI, [{
+    key: "init",
+    value: function init(params, res) {
+      var sub = params.sub,
+          onchart = params.onchart,
+          interval = params.interval,
+          meta = params.meta,
+          $p = params.$props,
+          interval_ms = params.interval_ms,
+          sub_start = params.sub_start,
+          ib = params.ib;
+      this.ti_map = [];
+      this.it_map = [];
+      this.sub_i = [];
+      this.ib = ib;
+      this.sub = res;
+      this.ss = sub_start;
+      this.tf = interval_ms;
+      var start = meta.sub_start; // Skip mapping for the regular mode
+
+      if (this.ib) {
+        this.map_sub(res);
+      }
+    } // Make maps for the main subset
+
+  }, {
+    key: "map_sub",
+    value: function map_sub(res) {
+      for (var i = 0; i < res.length; i++) {
+        var t = res[i][0];
+
+        var _i = this.ss + i;
+
+        this.ti_map[t] = _i;
+        this.it_map[_i] = t; // Overwrite t with i
+
+        var copy = toConsumableArray_default()(res[i]);
+
+        copy[0] = _i;
+        this.sub_i.push(copy);
+      }
+    } // Map overlay data
+    // TODO: parse() called 3 times instead of 2 for 'spx_sample.json'
+
+  }, {
+    key: "parse",
+    value: function parse(data) {
+      if (!this.ib || !this.sub[0]) return data;
+      var res = [];
+      var k = 0; // Candlestick index
+
+      var t0 = this.sub[0][0];
+      var tN = this.sub[this.sub.length - 1][0];
+
+      for (var i = 0; i < data.length; i++) {
+        var copy = toConsumableArray_default()(data[i]);
+
+        var _i = this.ss + i;
+
+        var tk = this.sub[k][0];
+        var t = data[i][0];
+        var index = this.ti_map[t];
+
+        if (index === undefined) {
+          // Linear extrapolation
+          if (t < t0 || t > tN) {
+            index = this.ss + k - (tk - t) / this.tf;
+          } // Linear interpolation
+          else {
+              var tk2 = this.sub[k + 1][0];
+              index = this.ss + k + (t - tk) / (tk2 - tk);
+            }
+        }
+
+        if (t > tk && k < this.sub.length - 2) k++;
+        copy[0] = index;
+        res.push(copy);
+      }
+
+      return res;
+    } // index => time
+
+  }, {
+    key: "i2t",
+    value: function i2t(i) {
+      if (!this.ib || !this.sub.length) return i; // Regular mode
+      // Discrete mapping
+
+      var res = this.it_map[i];
+      if (res !== undefined) return res; // Linear extrapolation
+      else if (i >= this.ss + this.sub_i.length) {
+          var di = i - (this.ss + this.sub_i.length) + 1;
+          var last = this.sub[this.sub.length - 1];
+          return last[0] + di * this.tf;
+        } else if (i < this.ss) {
+          var _di = i - this.ss;
+
+          return this.sub[0][0] + _di * this.tf;
+        } // Linear Interpolation
+
+      var i1 = Math.floor(i) - this.ss;
+      var i2 = i1 + 1;
+      var len = this.sub.length;
+      if (i2 >= len) i2 = len - 1;
+      var sub1 = this.sub[i1];
+      var sub2 = this.sub[i2];
+
+      if (sub1 && sub2) {
+        var t1 = sub1[0];
+        var t2 = sub2[0];
+        return t1 + (t2 - t1) * (i - i1 - this.ss);
+      }
+
+      return undefined;
+    } // time => index
+    // TODO: when switch from IB mode to regular tools
+    // disappear (bc there no more mapping)
+
+  }, {
+    key: "t2i",
+    value: function t2i(t) {
+      if (!this.sub.length) return undefined; // Discrete mapping
+
+      var res = this.ti_map[t];
+      if (res !== undefined) return res;
+      var t0 = this.sub[0][0];
+      var tN = this.sub[this.sub.length - 1][0]; // Linear extrapolation
+
+      if (t < t0) {
+        return this.ss - (t0 - t) / this.tf;
+      } else if (t > tN) {
+        var k = this.sub.length - 1;
+        return this.ss + k - (tN - t) / this.tf;
+      }
+
+      try {
+        var i = utils.fast_nearest(this.sub, t);
+        var tk = this.sub[i[1]][0];
+        return i[1] - (tk - t) / this.tf;
+      } catch (e) {}
+
+      return undefined;
+    } // Auto detect: is it time or index?
+    // Assuming that index-based mode is ON
+
+  }, {
+    key: "smth2i",
+    value: function smth2i(smth) {
+      if (smth > MAX_ARR) {
+        return this.t2i(smth); // it was time
+      } else {
+          return smth; // it was an index
+        }
+    }
+  }]);
+
+  return TI;
+}();
+
+
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Chart.vue?vue&type=script&lang=js&
+
 
 //
 //
@@ -11831,6 +12035,7 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
 //
 //
 //
+
 
 
 
@@ -11841,7 +12046,7 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
 
 /* harmony default export */ var Chartvue_type_script_lang_js_ = ({
   name: 'Chart',
-  props: ['title_txt', 'data', 'width', 'height', 'font', 'colors', 'overlays', 'tv_id', 'config', 'buttons', 'toolbar'],
+  props: ['title_txt', 'data', 'width', 'height', 'font', 'colors', 'overlays', 'tv_id', 'config', 'buttons', 'toolbar', 'ib'],
   mixins: [shaders],
   components: {
     GridSection: Section,
@@ -11854,6 +12059,8 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
 
     this.init_range();
     this.sub = this.subset();
+    utils.overwrite(this.range, this.range); // Fix for IB mode
+
     this._layout = new js_layout(this); // Updates current cursor values
 
     this.updater = new updater(this);
@@ -11862,8 +12069,10 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
   methods: {
     range_changed: function range_changed(r) {
       // Overwite & keep the original references
+      // Quick fix for IB mode (switch 2 next lines)
+      // TODO: wtf?
+      var sub = this.subset(r);
       utils.overwrite(this.range, r);
-      var sub = this.subset();
       utils.overwrite(this.sub, sub);
       this.update_layout();
       this.$emit('range-changed', r);
@@ -11884,7 +12093,8 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
     },
     calc_interval: function calc_interval() {
       if (this.ohlcv.length < 2) return;
-      this.interval = utils.detect_interval(this.ohlcv);
+      this.interval_ms = utils.detect_interval(this.ohlcv);
+      this.interval = this.$props.ib ? 1 : this.interval_ms;
     },
     set_ytransform: function set_ytransform(s) {
       var obj = this.y_transforms[s.grid_id] || {};
@@ -11899,17 +12109,37 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
       var l = this.ohlcv.length - 1;
       if (this.ohlcv.length < 2) return;
 
-      if (this.ohlcv.length < dl) {
+      if (this.ohlcv.length <= dl) {
         var s = 0,
             d = ml;
       } else {
         s = l - dl, d = 0.5;
       }
 
-      utils.overwrite(this.range, [this.ohlcv[s][0] - this.interval * d, this.ohlcv[l][0] + this.interval * ml]);
+      if (!this.$props.ib) {
+        utils.overwrite(this.range, [this.ohlcv[s][0] - this.interval * d, this.ohlcv[l][0] + this.interval * ml]);
+      } else {
+        utils.overwrite(this.range, [s - this.interval * d, l + this.interval * ml]);
+      }
     },
     subset: function subset() {
-      return utils.fast_filter(this.ohlcv, this.range[0] - this.interval, this.range[1]);
+      var range = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.range;
+
+      var _this$filter = this.filter(this.ohlcv, range[0] - this.interval, range[1]),
+          _this$filter2 = slicedToArray_default()(_this$filter, 2),
+          res = _this$filter2[0],
+          index = _this$filter2[1];
+
+      this.ti_map = new ti_mapping_TI();
+
+      if (res) {
+        this.sub_start = index;
+        this.ti_map.init(this, res);
+        if (!this.$props.ib) return res || [];
+        return this.ti_map.sub_i;
+      }
+
+      return [];
     },
     common_props: function common_props() {
       return {
@@ -11935,7 +12165,7 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
         return {
           type: d.type,
           name: d.name,
-          data: utils.fast_filter(d.data, _this.range[0] - _this.interval, _this.range[1]),
+          data: _this.ti_map.parse(utils.fast_filter(d.data, _this.ti_map.i2t(_this.range[0] - _this.interval), _this.ti_map.i2t(_this.range[1]))[0] || []),
           settings: d.settings || _this.settings_ov,
           grid: d.grid || {}
         };
@@ -12038,6 +12268,9 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
     offchart: function offchart() {
       return this.$props.data.offchart || [];
     },
+    filter: function filter() {
+      return this.$props.ib ? utils.fast_filter_i : utils.fast_filter;
+    },
     styles: function styles() {
       var w = this.$props.toolbar ? this.$props.config.TOOLBAR : 0;
       return {
@@ -12046,7 +12279,8 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
     },
     meta: function meta() {
       return {
-        last: this.last_candle
+        last: this.last_candle,
+        sub_start: this.sub_start
       };
     }
   },
@@ -12079,7 +12313,9 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
       settings_ohlcv: {},
       // Default overlay settings
       settings_ov: {},
-      last_candle: []
+      // Meta data
+      last_candle: [],
+      sub_start: undefined
     };
   },
   watch: {
@@ -12087,6 +12323,24 @@ Keyboard_component.options.__file = "src/components/Keyboard.vue"
       this.update_layout();
     },
     height: function height() {
+      this.update_layout();
+    },
+    ib: function ib(nw) {
+      if (!nw) {
+        // Change range index => time
+        var t1 = this.ti_map.i2t(this.range[0]);
+        var t2 = this.ti_map.i2t(this.range[1]);
+        utils.overwrite(this.range, [t1, t2]);
+        this.interval = this.interval_ms;
+      } else {
+        this.init_range(); // TODO: calc index range instead
+
+        utils.overwrite(this.range, this.range);
+        this.interval = 1;
+      }
+
+      var sub = this.subset();
+      utils.overwrite(this.sub, sub);
       this.update_layout();
     },
     colors: function colors() {
@@ -12551,6 +12805,10 @@ Toolbar_component.options.__file = "src/components/Toolbar.vue"
       "default": function _default() {
         return [];
       }
+    },
+    indexBased: {
+      type: Boolean,
+      "default": false
     }
   },
   computed: {
@@ -12566,6 +12824,7 @@ Toolbar_component.options.__file = "src/components/Toolbar.vue"
         font: this.$props.font,
         buttons: this.$props.legendButtons,
         toolbar: this.$props.toolbar,
+        ib: this.$props.indexBased || this.index_based || false,
         colors: {}
       };
 
@@ -12590,6 +12849,17 @@ Toolbar_component.options.__file = "src/components/Toolbar.vue"
       } else {
         return data;
       }
+    },
+    index_based: function index_based() {
+      var base = this.$props.data;
+
+      if (base.chart) {
+        return base.chart.indexBased;
+      } else if (base.data) {
+        return base.data.chart.indexBased;
+      }
+
+      return false;
     }
   },
   data: function data() {
@@ -12617,12 +12887,25 @@ Toolbar_component.options.__file = "src/components/Toolbar.vue"
       }
     },
     "goto": function goto(t) {
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map;
+        t = ti_map.smth2i(t);
+      }
+
       this.$refs.chart["goto"](t);
     },
     setRange: function setRange(t1, t2) {
       this.$refs.chart.setRange(t1, t2);
     },
     getRange: function getRange() {
+      if (this.chart_props.ib) {
+        // Time range => index range
+        var ti_map = this.$refs.chart.ti_map;
+        return this.$refs.chart.range.map(function (x) {
+          return ti_map.i2t(x);
+        });
+      }
+
       return this.$refs.chart.range;
     },
     getCursor: function getCursor() {
@@ -12700,7 +12983,7 @@ var getPrototypeOf = __webpack_require__(8);
 var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
-var regenerator = __webpack_require__(21);
+var regenerator = __webpack_require__(22);
 var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/asyncToGenerator.js
