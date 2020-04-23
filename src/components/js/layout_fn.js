@@ -4,11 +4,14 @@ import Utils from '../../stuff/utils.js'
 
 export default function(self, range) {
 
+    const ib = self.ti_map.ib
+    const dt = range[1] - range[0]
+    const r = self.spacex / dt
+
     Object.assign(self, {
         // Time to screen coordinates
         t2screen: t => {
-            const dt = range[1] - range[0]
-            const r = self.spacex / dt
+            if (ib) t = self.ti_map.smth2i(t)
             return Math.floor((t - range[0]) * r) - 0.5
         },
         // $ to screen coordinates
@@ -32,9 +35,9 @@ export default function(self, range) {
         },
         // Screen-X to timestamp
         screen2t: x => {
-            const dt = range[1] - range[0]
-            const r = self.spacex / dt
-            return Math.floor(range[0] + x / r)
+            // TODO: most likely Math.floor not needed
+            // return Math.floor(range[0] + x / r)
+            return range[0] + x / r
         },
         // $-axis nearest step
         $_magnet: price => { },
