@@ -42,9 +42,26 @@
 import ButtonGroup from './ButtonGroup.vue'
 
 export default {
+    // If this component is called ChartLegend, then why is it named Legend.vue? It should be named as ChartLegend.
+    // A ChartLegend consists of a list of ButtonGroup?
     name: 'ChartLegend',
+
+    // TODO: What are all these props? What are typical values for these props?
     props: [
-        'common', 'values', 'grid_id', 'meta_props'
+        // HN: This seems to have
+        //      common.layout.grids[id]
+        //      common.layout.grids[id].height
+        //      common.layout.grids[id].offset
+        //      common.layout.grids[id].prec
+        //      common.data -> seems to be whole data.json structure??
+        'common',
+        // HN: This seems to have
+        //      values.ohlcv   -> ohlcv value at the current cursor
+        'values',
+
+        // HN: This seems to be some kind of Id in the this.$props.common.layout.grids[id]
+        'grid_id',
+        'meta_props'
     ],
     components: { ButtonGroup },
     computed: {
@@ -60,25 +77,24 @@ export default {
                 this.$props.values.ohlcv[3].toFixed(prec),
                 this.$props.values.ohlcv[4].toFixed(prec),
                 this.$props.values.ohlcv[5] ?
-                    this.$props.values.ohlcv[5].toFixed(2):
+                    this.$props.values.ohlcv[5].toFixed(0):
                     'n/a'
             ]
         },
         indicators() {
             const values = this.$props.values
-            const f = this.format
             var types = {}
             return this.json_data.filter(
                 x => x.settings.legend !== false && !x.main
             ).map(x => {
                 if (!(x.type in types)) types[x.type] = 0
-                const id = x.type + `_${types[x.type]++}`
+                const id = x.type + `_${types[x.type]++}`   // HN: This seems to generated id = XSpline_1
                 return {
                     v: 'display' in x.settings ? x.settings.display : true,
-                    name: x.name || id,
-                    index: this.json_data.indexOf(x),
-                    id: id,
-                    values: values ? f(id, values) : this.n_a(1),
+                    name: x.name || id,     // HN: Example: EMA200
+                    index: this.json_data.indexOf(x),   // an index in the list of iindicators
+                    id: id,                 // HN: XPline_1
+                    values: values ? this.format(id, values) : this.n_a(1),
                     unk: !(id in (this.$props.meta_props || {}))
                 }
             })
