@@ -216,6 +216,7 @@ export default {
             }
         },
         goto(t) {
+            // TODO: limit goto & setRange (out of data error)
             if (this.chart_props.ib) {
                 const ti_map = this.$refs.chart.ti_map
                 t = ti_map.smth2i(t)
@@ -223,6 +224,12 @@ export default {
             this.$refs.chart.goto(t)
         },
         setRange(t1, t2) {
+            if (this.chart_props.ib) {
+                const ti_map = this.$refs.chart.ti_map
+                t1 = ti_map.smth2i(t1)
+                t2 = ti_map.smth2i(t2)
+                console.log(t1, t2)
+            }
             this.$refs.chart.setRange(t1, t2)
         },
         getRange() {
@@ -235,7 +242,15 @@ export default {
             return this.$refs.chart.range
         },
         getCursor() {
-            return this.$refs.chart.cursor
+            let cursor = this.$refs.chart.cursor
+            if (this.chart_props.ib) {
+                let ti_map = this.$refs.chart.ti_map
+                let copy = Object.assign({}, cursor)
+                copy.i = copy.t
+                copy.t = ti_map.i2t(copy.t)
+                return copy
+            }
+            return cursor
         },
         legend_button(event) {
             this.$emit('legend-button-click', event)

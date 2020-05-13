@@ -1,7 +1,7 @@
 /*!
- * TradingVue.JS - v0.4.5 - Thu Apr 23 2020
- *     https://github.com/C451/trading-vue-js
- *     Copyright (c) 2019 c451 Code's All Right;
+ * TradingVue.JS - v0.5.0 - Tue May 05 2020
+ *     https://github.com/tvjsx/trading-vue-js
+ *     Copyright (c) 2019 C451 Code's All Right;
  *     Licensed under the MIT license
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -97,20 +97,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 55);
+/******/ 	return __webpack_require__(__webpack_require__.s = 56);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithoutHoles = __webpack_require__(27);
+var arrayWithoutHoles = __webpack_require__(28);
 
-var iterableToArray = __webpack_require__(28);
+var iterableToArray = __webpack_require__(29);
 
 var unsupportedIterableToArray = __webpack_require__(24);
 
-var nonIterableSpread = __webpack_require__(29);
+var nonIterableSpread = __webpack_require__(30);
 
 function _toConsumableArray(arr) {
   return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
@@ -156,13 +156,13 @@ module.exports = _createClass;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithHoles = __webpack_require__(30);
+var arrayWithHoles = __webpack_require__(31);
 
-var iterableToArrayLimit = __webpack_require__(31);
+var iterableToArrayLimit = __webpack_require__(32);
 
 var unsupportedIterableToArray = __webpack_require__(24);
 
-var nonIterableRest = __webpack_require__(32);
+var nonIterableRest = __webpack_require__(33);
 
 function _slicedToArray(arr, i) {
   return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
@@ -3207,7 +3207,7 @@ module.exports = _getPrototypeOf;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(37);
+var content = __webpack_require__(38);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3223,7 +3223,7 @@ if(false) {}
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(39);
+var content = __webpack_require__(40);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3239,7 +3239,7 @@ if(false) {}
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(41);
+var content = __webpack_require__(42);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3255,7 +3255,7 @@ if(false) {}
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(43);
+var content = __webpack_require__(44);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3271,7 +3271,7 @@ if(false) {}
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(45);
+var content = __webpack_require__(46);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3287,7 +3287,7 @@ if(false) {}
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(47);
+var content = __webpack_require__(48);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3303,7 +3303,7 @@ if(false) {}
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(49);
+var content = __webpack_require__(50);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3319,7 +3319,7 @@ if(false) {}
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(51);
+var content = __webpack_require__(52);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -3332,7 +3332,7 @@ if(false) {}
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var setPrototypeOf = __webpack_require__(52);
+var setPrototypeOf = __webpack_require__(53);
 
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
@@ -3357,7 +3357,7 @@ module.exports = _inherits;
 
 var _typeof = __webpack_require__(19);
 
-var assertThisInitialized = __webpack_require__(53);
+var assertThisInitialized = __webpack_require__(54);
 
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
@@ -3402,9 +3402,9 @@ module.exports = _typeof;
 /**
  * Dependencies
  */
-var util = __webpack_require__(33),
-    cmp = __webpack_require__(34),
-    bin = __webpack_require__(35);
+var util = __webpack_require__(34),
+    cmp = __webpack_require__(35),
+    bin = __webpack_require__(36);
 
 /**
  * Module interface definition
@@ -3640,7 +3640,7 @@ module.exports = _defineProperty;
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(54);
+module.exports = __webpack_require__(55);
 
 
 /***/ }),
@@ -4050,6 +4050,12 @@ module.exports = _asyncToGenerator;
 
 /***/ }),
 /* 27 */
+/***/ (function(module, exports) {
+
+// Draws a ray, adds corresponding collision f-n
+
+/***/ }),
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayLikeToArray = __webpack_require__(23);
@@ -4061,7 +4067,7 @@ function _arrayWithoutHoles(arr) {
 module.exports = _arrayWithoutHoles;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports) {
 
 function _iterableToArray(iter) {
@@ -4071,7 +4077,7 @@ function _iterableToArray(iter) {
 module.exports = _iterableToArray;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 function _nonIterableSpread() {
@@ -4081,7 +4087,7 @@ function _nonIterableSpread() {
 module.exports = _nonIterableSpread;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 function _arrayWithHoles(arr) {
@@ -4091,7 +4097,7 @@ function _arrayWithHoles(arr) {
 module.exports = _arrayWithHoles;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 function _iterableToArrayLimit(arr, i) {
@@ -4124,7 +4130,7 @@ function _iterableToArrayLimit(arr, i) {
 module.exports = _iterableToArrayLimit;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 function _nonIterableRest() {
@@ -4134,7 +4140,7 @@ function _nonIterableRest() {
 module.exports = _nonIterableRest;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 /**
@@ -4179,7 +4185,7 @@ module.exports.isSortableArrayLike = function (o) {
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports) {
 
 /**
@@ -4214,7 +4220,7 @@ module.exports = {
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 /**
@@ -4276,7 +4282,7 @@ module.exports.search = search;
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4286,7 +4292,7 @@ module.exports.search = search;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_UxWrapper_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4299,7 +4305,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4309,7 +4315,7 @@ module.exports = exports;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LegendButton_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4322,7 +4328,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4332,7 +4338,7 @@ module.exports = exports;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroup_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4345,7 +4351,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4355,7 +4361,7 @@ module.exports = exports;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Legend_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4368,7 +4374,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4378,7 +4384,7 @@ module.exports = exports;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Section_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4391,7 +4397,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4401,7 +4407,7 @@ module.exports = exports;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Botbar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4414,7 +4420,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4424,7 +4430,7 @@ module.exports = exports;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_ToolbarItem_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4437,7 +4443,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4447,7 +4453,7 @@ module.exports = exports;
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Toolbar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4460,7 +4466,7 @@ module.exports = exports;
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports) {
 
 function _setPrototypeOf(o, p) {
@@ -4475,7 +4481,7 @@ function _setPrototypeOf(o, p) {
 module.exports = _setPrototypeOf;
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports) {
 
 function _assertThisInitialized(self) {
@@ -4489,7 +4495,7 @@ function _assertThisInitialized(self) {
 module.exports = _assertThisInitialized;
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -5224,7 +5230,7 @@ try {
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5241,6 +5247,9 @@ __webpack_require__.d(__webpack_exports__, "Volbar", function() { return /* reex
 __webpack_require__.d(__webpack_exports__, "layout_cnv", function() { return /* reexport */ layout_cnv; });
 __webpack_require__.d(__webpack_exports__, "layout_vol", function() { return /* reexport */ layout_vol; });
 __webpack_require__.d(__webpack_exports__, "DataCube", function() { return /* reexport */ datacube_DataCube; });
+__webpack_require__.d(__webpack_exports__, "Tool", function() { return /* reexport */ mixins_tool; });
+__webpack_require__.d(__webpack_exports__, "Interface", function() { return /* reexport */ mixins_interface; });
+__webpack_require__.d(__webpack_exports__, "primitives", function() { return /* binding */ primitives; });
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/TradingVue.vue?vue&type=template&id=235c0ade&
 var TradingVuevue_type_template_id_235c0ade_render = function() {
@@ -5310,11 +5319,13 @@ var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableA
 // CONCATENATED MODULE: ./src/stuff/constants.js
 var SECOND = 1000;
 var MINUTE = SECOND * 60;
+var MINUTE3 = MINUTE * 3;
 var MINUTE5 = MINUTE * 5;
 var MINUTE15 = MINUTE * 15;
 var MINUTE30 = MINUTE * 30;
 var HOUR = MINUTE * 60;
 var HOUR4 = HOUR * 4;
+var HOUR12 = HOUR * 12;
 var DAY = HOUR * 24;
 var WEEK = DAY * 7;
 var MONTH = WEEK * 4;
@@ -5367,6 +5378,27 @@ var ChartConfig = {
 
 };
 ChartConfig.FONT = "11px -apple-system,BlinkMacSystemFont,\n    Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,\n    Fira Sans,Droid Sans,Helvetica Neue,\n    sans-serif";
+var MAP_UNIT = {
+  "1s": SECOND,
+  "5s": SECOND * 5,
+  "10s": SECOND * 10,
+  "20s": SECOND * 20,
+  "30s": SECOND * 30,
+  "1m": MINUTE,
+  "3m": MINUTE3,
+  "5m": MINUTE5,
+  "15m": MINUTE15,
+  "30m": MINUTE30,
+  "1H": HOUR,
+  "2H": HOUR * 2,
+  "3H": HOUR * 3,
+  "4H": HOUR4,
+  "12H": HOUR12,
+  "1D": DAY,
+  "1W": WEEK,
+  "1M": MONTH,
+  "1Y": YEAR
+};
 /* harmony default export */ var constants = ({
   SECOND: SECOND,
   MINUTE: MINUTE,
@@ -5382,7 +5414,8 @@ ChartConfig.FONT = "11px -apple-system,BlinkMacSystemFont,\n    Segoe UI,Roboto,
   MONTHMAP: MONTHMAP,
   TIMESCALES: TIMESCALES,
   $SCALES: $SCALES,
-  ChartConfig: ChartConfig
+  ChartConfig: ChartConfig,
+  map_unit: MAP_UNIT
 });
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=4d06a4de&
 var Chartvue_type_template_id_4d06a4de_render = function() {
@@ -5451,6 +5484,7 @@ var lib = __webpack_require__(20);
 var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
 // CONCATENATED MODULE: ./src/stuff/utils.js
+
 
 
 /* harmony default export */ var utils = ({
@@ -5550,14 +5584,6 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
     });
     return min;
   },
-  // Detects candles interval. (old version, slightly slower)
-
-  /*detect_interval(ohlcv) {
-      // Initial value of accumulator
-      let a0 = [Infinity, ohlcv[0][0]]
-      return ohlcv.slice(1, 99).reduce((a,x) =>
-      [Math.min(x[0] - a[1], a[0]), x[0]], a0)[0]
-  },*/
   // Gets numberic part of overlay id (e.g 'EMA_1' = > 1)
   get_num_id: function get_num_id(id) {
     return parseInt(id.split('_').pop());
@@ -5628,15 +5654,139 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
     }
 
     return c;
+  },
+  // Parse timeframe or return value in ms
+  parse_tf: function parse_tf(smth) {
+    if (typeof smth === 'string') {
+      return constants.map_unit[smth];
+    } else {
+      return smth;
+    }
   }
+});
+// CONCATENATED MODULE: ./src/stuff/math.js
+// Math/Geometry
+/* harmony default export */ var math = ({
+  // Distance from point to line
+  // p1 = point, (p2, p3) = line
+  point2line: function point2line(p1, p2, p3) {
+    var _this$tri = this.tri(p1, p2, p3),
+        area = _this$tri.area,
+        base = _this$tri.base;
+
+    return Math.abs(this.tri_h(area, base));
+  },
+  // Distance from point to segment
+  // p1 = point, (p2, p3) = segment
+  point2seg: function point2seg(p1, p2, p3) {
+    var _this$tri2 = this.tri(p1, p2, p3),
+        area = _this$tri2.area,
+        base = _this$tri2.base; // Vector projection
+
+
+    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
+
+    var l1 = Math.max(-proj, 0); // Distance from right pin
+
+    var l2 = Math.max(proj - base, 0); // Normal
+
+    var h = Math.abs(this.tri_h(area, base));
+    return Math.max(h, l1, l2);
+  },
+  // Distance from point to ray
+  // p1 = point, (p2, p3) = ray
+  point2ray: function point2ray(p1, p2, p3) {
+    var _this$tri3 = this.tri(p1, p2, p3),
+        area = _this$tri3.area,
+        base = _this$tri3.base; // Vector projection
+
+
+    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
+
+    var l1 = Math.max(-proj, 0); // Normal
+
+    var h = Math.abs(this.tri_h(area, base));
+    return Math.max(h, l1);
+  },
+  tri: function tri(p1, p2, p3) {
+    var area = this.area(p1, p2, p3);
+    var dx = p3[0] - p2[0];
+    var dy = p3[1] - p2[1];
+    var base = Math.sqrt(dx * dx + dy * dy);
+    return {
+      area: area,
+      base: base
+    };
+  },
+
+  /* Area of triangle:
+          p1
+        /    \
+      p2  _  p3
+  */
+  area: function area(p1, p2, p3) {
+    return p1[0] * (p2[1] - p3[1]) + p2[0] * (p3[1] - p1[1]) + p3[0] * (p1[1] - p2[1]);
+  },
+  // Triangle height
+  tri_h: function tri_h(area, base) {
+    return area / base;
+  },
+  // Dot product of (p2, p3) and (p2, p1)
+  dot_prod: function dot_prod(p1, p2, p3) {
+    var v1 = [p3[0] - p2[0], p3[1] - p2[1]];
+    var v2 = [p1[0] - p2[0], p1[1] - p2[1]];
+    return v1[0] * v2[0] + v1[1] * v2[1];
+  },
+  // Symmetrical log
+  log: function log(x) {
+    // TODO: log for small values
+    return Math.sign(x) * Math.log(Math.abs(x) + 1);
+  },
+  // Symmetrical exp
+  exp: function exp(x) {
+    return Math.sign(x) * (Math.exp(Math.abs(x)) - 1);
+  },
+  // Middle line on log scale based on range & px height
+  log_mid: function log_mid(r, h) {
+    var log_hi = this.log(r[0]);
+    var log_lo = this.log(r[1]);
+    var px = h / 2;
+    var gx = log_hi - px * (log_hi - log_lo) / h;
+    return this.exp(gx);
+  },
+  // Return new adjusted range, based on the previous
+  // range, new $_hi, target middle line
+  re_range: function re_range(r1, hi2, mid) {
+    var log_hi1 = this.log(r1[0]);
+    var log_lo1 = this.log(r1[1]);
+    var log_hi2 = this.log(hi2);
+    var log_$ = this.log(mid);
+    var W = (log_hi2 - log_$) * (log_hi1 - log_lo1) / (log_hi1 - log_$);
+    return this.exp(log_hi2 - W);
+  } // Return new adjusted range, based on the previous
+  // range, new $_hi, target middle line + dy (shift)
+  // WASTE
+
+  /*range_shift(r1, hi2, mid, dy, h) {
+      let log_hi1 = this.log(r1[0])
+      let log_lo1 = this.log(r1[1])
+      let log_hi2 = this.log(hi2)
+      let log_$ = this.log(mid)
+       let W = h * (log_hi2 - log_$) /
+              (h * (log_hi1 - log_$) / (log_hi1 - log_lo1) + dy)
+       return this.exp(log_hi2 - W)
+   }*/
+
 });
 // CONCATENATED MODULE: ./src/components/js/layout_fn.js
 // Layout functional interface
+
 
 /* harmony default export */ var layout_fn = (function (self, range) {
   var ib = self.ti_map.ib;
   var dt = range[1] - range[0];
   var r = self.spacex / dt;
+  var ls = self.grid.logScale || false;
   Object.assign(self, {
     // Time to screen coordinates
     t2screen: function t2screen(t) {
@@ -5645,6 +5795,7 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
     },
     // $ to screen coordinates
     $2screen: function $2screen(y) {
+      if (ls) y = math.log(y);
       return Math.floor(y * self.A + self.B) - 0.5;
     },
     // Time-axis nearest step
@@ -5659,10 +5810,8 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
     },
     // Screen-Y to dollar value (or whatever)
     screen2$: function screen2$(y) {
-      var range = self.height;
-      var range$ = self.$_hi - self.$_lo;
-      var y$ = (range - y) * (range$ / range);
-      return self.$_lo + y$;
+      if (ls) return math.exp((y - self.B) / self.A);
+      return (y - self.B) / self.A;
     },
     // Screen-X to timestamp
     screen2t: function screen2t(x) {
@@ -5688,7 +5837,35 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
   });
   return self;
 });
+// CONCATENATED MODULE: ./src/components/js/log_scale.js
+// Log-scale mode helpers
+// TODO: all-negative numbers (sometimes wrong scaling)
+
+/* harmony default export */ var log_scale = ({
+  candle: function candle(self, mid, p, $p) {
+    return {
+      x: mid,
+      w: self.px_step * $p.config.CANDLEW,
+      o: Math.floor(math.log(p[1]) * self.A + self.B),
+      h: Math.floor(math.log(p[2]) * self.A + self.B),
+      l: Math.floor(math.log(p[3]) * self.A + self.B),
+      c: Math.floor(math.log(p[4]) * self.A + self.B),
+      raw: p
+    };
+  },
+  expand: function expand(self, height) {
+    // expand log scale
+    var A = -height / (math.log(self.$_hi) - math.log(self.$_lo));
+    var B = -math.log(self.$_hi) * A;
+    var top = -height * 0.1;
+    var bot = height * 1.1;
+    self.$_hi = math.exp((top - B) / A);
+    self.$_lo = math.exp((bot - B) / A);
+  }
+});
 // CONCATENATED MODULE: ./src/components/js/grid_maker.js
+
+
 
 
 
@@ -5696,7 +5873,8 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
 var grid_maker_TIMESCALES = constants.TIMESCALES,
     grid_maker_$SCALES = constants.$SCALES,
-    grid_maker_WEEK = constants.WEEK; // master_grid - ref to the master grid
+    grid_maker_WEEK = constants.WEEK;
+var MAX_INT = Number.MAX_SAFE_INTEGER; // master_grid - ref to the master grid
 
 function GridMaker(id, params) {
   var master_grid = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
@@ -5708,12 +5886,14 @@ function GridMaker(id, params) {
       layers_meta = params.layers_meta,
       height = params.height,
       y_t = params.y_t,
-      ti_map = params.ti_map;
+      ti_map = params.ti_map,
+      grid = params.grid;
   var self = {
     ti_map: ti_map
   };
   var lm = layers_meta[id];
   var y_range_fn = null;
+  var ls = grid.logScale;
 
   if (lm && Object.keys(lm).length) {
     // Gets last y_range fn()
@@ -5764,13 +5944,23 @@ function GridMaker(id, params) {
       self.$_hi = y_t.range[0];
       self.$_lo = y_t.range[1];
     } else {
-      self.$_hi = hi + (hi - lo) * $p.config.EXPAND;
-      self.$_lo = lo - (hi - lo) * $p.config.EXPAND;
+      if (!ls) {
+        self.$_hi = hi + (hi - lo) * $p.config.EXPAND;
+        self.$_lo = lo - (hi - lo) * $p.config.EXPAND;
+      } else {
+        self.$_hi = hi;
+        self.$_lo = lo;
+        log_scale.expand(self, height);
+      }
 
       if (self.$_hi === self.$_lo) {
-        self.$_hi *= 1.05; // Expand if height range === 0
+        if (!ls) {
+          self.$_hi *= 1.05; // Expand if height range === 0
 
-        self.$_lo *= 0.95;
+          self.$_lo *= 0.95;
+        } else {
+          log_scale.expand(self, height);
+        }
       }
     }
   }
@@ -5795,6 +5985,8 @@ function GridMaker(id, params) {
     var lens = subn.map(function (x) {
       return x[1].toFixed(self.prec).length;
     });
+    lens.push(self.$_hi.toFixed(self.prec).length);
+    lens.push(self.$_lo.toFixed(self.prec).length);
     var str = '0'.repeat(Math.max.apply(Math, toConsumableArray_default()(lens))) + '    ';
     self.sb = ctx.measureText(str).width;
     self.sb = Math.max(Math.floor(self.sb), $p.config.SBMIN);
@@ -5868,8 +6060,13 @@ function GridMaker(id, params) {
     var r = self.spacex / dt;
     self.startx = (sub[0][0] - range[0]) * r; // Candle Y-transform: (A = scale, B = shift)
 
-    self.A = -height / (self.$_hi - self.$_lo);
-    self.B = -self.$_hi * self.A;
+    if (!grid.logScale) {
+      self.A = -height / (self.$_hi - self.$_lo);
+      self.B = -self.$_hi * self.A;
+    } else {
+      self.A = -height / (math.log(self.$_hi) - math.log(self.$_lo));
+      self.B = -math.log(self.$_hi) * self.A;
+    }
   } // Select nearest good-loking t step (m is target scale)
 
 
@@ -5889,10 +6086,53 @@ function GridMaker(id, params) {
     var d = Math.pow(10, p);
     var s = grid_maker_$SCALES.map(function (x) {
       return x * d;
-    }); // TODO: center the range (look at RSI for eaxmple,
+    }); // TODO: center the range (look at RSI for example,
     // it looks ugly when "80" is near the top)
 
     return utils.strip(utils.nearest_a(m, s)[1]);
+  }
+
+  function dollar_mult() {
+    var mult_hi = dollar_mult_hi();
+    var mult_lo = dollar_mult_lo();
+    return Math.max(mult_hi, mult_lo);
+  } // Price step multiplier (for the log-scale mode)
+
+
+  function dollar_mult_hi() {
+    var h = Math.min(self.B, height);
+    if (h < $p.config.GRIDY) return 1;
+    var n = h / $p.config.GRIDY; // target grid N
+
+    var yrange = self.$_hi;
+
+    if (self.$_lo > 0) {
+      var yratio = self.$_hi / self.$_lo;
+    } else {
+      yratio = self.$_hi / 1; // TODO: small values
+    }
+
+    var m = yrange * ($p.config.GRIDY / h);
+    var p = parseInt(yrange.toExponential().split('e')[1]);
+    return Math.pow(yratio, 1 / n);
+  }
+
+  function dollar_mult_lo() {
+    var h = Math.min(height - self.B, height);
+    if (h < $p.config.GRIDY) return 1;
+    var n = h / $p.config.GRIDY; // target grid N
+
+    var yrange = Math.abs(self.$_lo);
+
+    if (self.$_hi < 0 && self.$_lo < 0) {
+      var yratio = Math.abs(self.$_lo / self.$_hi);
+    } else {
+      yratio = Math.abs(self.$_lo) / 1;
+    }
+
+    var m = yrange * ($p.config.GRIDY / h);
+    var p = parseInt(yrange.toExponential().split('e')[1]);
+    return Math.pow(yratio, 1 / n);
   }
 
   function grid_x() {
@@ -5970,28 +6210,144 @@ function GridMaker(id, params) {
     }
   }
 
+  function grid_y_log() {
+    // TODO: Prevent duplicate levels, is this even
+    // a problem here ?
+    self.$_mult = dollar_mult();
+    self.ys = [];
+    var v = Math.abs(sub[sub.length - 1][1] || 1);
+    var y1 = search_start_pos(v);
+    var y2 = search_start_neg(-v);
+    var yp = -Infinity; // Previous y value
+
+    var n = height / $p.config.GRIDY; // target grid N
+
+    var q = 1 + (self.$_mult - 1) / 2; // Over 0
+
+    for (var y$ = y1; y$ > 0; y$ /= self.$_mult) {
+      y$ = log_rounder(y$, q);
+      var y = Math.floor(math.log(y$) * self.A + self.B);
+      self.ys.push([y, utils.strip(y$)]);
+      if (y > height) break;
+      if (y - yp < $p.config.GRIDY * 0.7) break;
+      if (self.ys.length > n + 1) break;
+      yp = y;
+    } // Under 0
+
+
+    yp = Infinity;
+
+    for (var y$ = y2; y$ < 0; y$ /= self.$_mult) {
+      y$ = log_rounder(y$, q);
+
+      var _y = Math.floor(math.log(y$) * self.A + self.B);
+
+      if (yp - _y < $p.config.GRIDY * 0.7) break;
+      self.ys.push([_y, utils.strip(y$)]);
+      if (_y < 0) break;
+      if (self.ys.length > n * 3 + 1) break;
+      yp = _y;
+    } // TODO: remove lines near to 0
+
+  } // Search a start for the top grid so that
+  // the fixed value always included
+
+
+  function search_start_pos(value) {
+    var N = height / $p.config.GRIDY; // target grid N
+
+    var y = Infinity,
+        y$ = value,
+        count = 0;
+
+    while (y > 0) {
+      y = Math.floor(math.log(y$) * self.A + self.B);
+      y$ *= self.$_mult;
+      if (count++ > N * 3) return 0; // Prevents deadloops
+    }
+
+    return y$;
+  }
+
+  function search_start_neg(value) {
+    var N = height / $p.config.GRIDY; // target grid N
+
+    var y = -Infinity,
+        y$ = value,
+        count = 0;
+
+    while (y < height) {
+      y = Math.floor(math.log(y$) * self.A + self.B);
+      y$ *= self.$_mult;
+      if (count++ > N * 3) break; // Prevents deadloops
+    }
+
+    return y$;
+  } // Make log scale levels look great again
+
+
+  function log_rounder(x, quality) {
+    var s = Math.sign(x);
+    x = Math.abs(x);
+
+    if (x > 10) {
+      for (var div = 10; div < MAX_INT; div *= 10) {
+        var nice = Math.floor(x / div) * div;
+
+        if (x / nice > quality) {
+          // More than 10% off
+          break;
+        }
+      }
+
+      div /= 10;
+      return s * Math.floor(x / div) * div;
+    } else if (x < 1) {
+      for (var ro = 10; ro >= 1; ro--) {
+        var _nice = utils.round(x, ro);
+
+        if (x / _nice > quality) {
+          // More than 10% off
+          break;
+        }
+      }
+
+      return s * utils.round(x, ro + 1);
+    } else {
+      return s * Math.floor(x);
+    }
+  }
+
   function apply_sizes() {
     self.width = $p.width - self.sb;
     self.height = height;
   }
 
+  calc_$range();
   calc_sidebar();
   return {
     // First we need to calculate max sidebar width
     // (among all grids). Then we can actually make
     // them
     create: function create() {
-      calc_$range();
       calc_positions();
       grid_x();
-      grid_y();
+
+      if (grid.logScale) {
+        grid_y_log();
+      } else {
+        grid_y();
+      }
+
       apply_sizes(); // Link to the master grid (candlesticks)
 
       if (master_grid) {
         self.master_grid = master_grid;
-      } // Here we add some helpful functions for
-      // plugin creators
+      }
 
+      self.grid = grid; // Grid params
+      // Here we add some helpful functions for
+      // plugin creators
 
       return layout_fn(self, range);
     },
@@ -6026,6 +6382,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 // So it's better to calc all in one place.
 
 
+
+
+
 function Layout(params) {
   var chart = params.chart,
       sub = params.sub,
@@ -6037,6 +6396,7 @@ function Layout(params) {
       ti_map = params.ti_map,
       $p = params.$props,
       y_ts = params.y_transforms;
+  var mgrid = chart.grid || {};
   offsub = offsub.filter(function (x, i) {
     // Skip offchart overlays with custom grid id,
     // because they will be mergred with the existing grids
@@ -6048,12 +6408,10 @@ function Layout(params) {
     var height = $p.height - $p.config.BOTBAR; // When at least one height defined (default = 1),
     // Pxs calculated as: (sum of weights) / number
 
-    var grid = chart.grid || {};
-
-    if (grid.height || offsub.find(function (x) {
+    if (mgrid.height || offsub.find(function (x) {
       return x.grid.height;
     })) {
-      return weighted_hs(grid, height);
+      return weighted_hs(mgrid, height);
     }
 
     var n = offsub.length;
@@ -6105,13 +6463,13 @@ function Layout(params) {
     for (var i = 0; i < sub.length; i++) {
       var p = sub[i];
       mid = self.t2screen(p[0]) + 0.5;
-      self.candles.push({
+      self.candles.push(mgrid.logScale ? log_scale.candle(self, mid, p, $p) : {
         x: mid,
         w: self.px_step * $p.config.CANDLEW,
-        o: p[1] * self.A + self.B,
-        h: p[2] * self.A + self.B,
-        l: p[3] * self.A + self.B,
-        c: p[4] * self.A + self.B,
+        o: Math.floor(p[1] * self.A + self.B),
+        h: Math.floor(p[2] * self.A + self.B),
+        l: Math.floor(p[3] * self.A + self.B),
+        c: Math.floor(p[4] * self.A + self.B),
         raw: p
       }); // Clear volume bar if there is a time gap
 
@@ -6143,7 +6501,8 @@ function Layout(params) {
     layers_meta: layers_meta,
     ti_map: ti_map,
     height: hs[0],
-    y_t: y_ts[0]
+    y_t: y_ts[0],
+    grid: mgrid
   };
   var gms = [new grid_maker(0, specs)]; // Sub grids
 
@@ -6154,11 +6513,14 @@ function Layout(params) {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       var _step$value = slicedToArray_default()(_step.value, 2),
           i = _step$value[0],
-          data = _step$value[1].data;
+          _step$value$ = _step$value[1],
+          data = _step$value$.data,
+          grid = _step$value$.grid;
 
       specs.sub = data;
       specs.height = hs[i + 1];
       specs.y_t = y_ts[i + 1];
+      specs.grid = grid || {};
       gms.push(new grid_maker(i + 1, specs, gms[0].get_layout()));
     } // Max sidebar among all grinds
 
@@ -6428,6 +6790,7 @@ function grid_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) 
 // Think of it as an I/O system for Grid.vue
 
 
+
  // Grid is good.
 
 var grid_Grid = /*#__PURE__*/function () {
@@ -6479,7 +6842,8 @@ var grid_Grid = /*#__PURE__*/function () {
           r: _this.range.slice(),
           t: _this.range[1] - _this.range[0],
           o: tfrm ? tfrm.offset || 0 : 0,
-          y_r: tfrm && tfrm.range ? tfrm.range.slice() : undefined
+          y_r: tfrm && tfrm.range ? tfrm.range.slice() : undefined,
+          B: _this.layout.B
         };
 
         _this.comp.$emit('cursor-changed', {
@@ -6746,11 +7110,19 @@ var grid_Grid = /*#__PURE__*/function () {
       var d$ = this.layout.$_hi - this.layout.$_lo;
       d$ *= (this.drug.y - y) / this.layout.height;
       var offset = this.drug.o + d$;
+      var ls = this.layout.grid.logScale;
 
-      if (this.$p.y_transform && !this.$p.y_transform.auto) {
+      if (ls && this.drug.y_r) {
+        var dy = this.drug.y - y;
+        var range = this.drug.y_r.slice();
+        range[0] = math.exp((0 - this.drug.B + dy) / this.layout.A);
+        range[1] = math.exp((this.layout.height - this.drug.B + dy) / this.layout.A);
+      }
+
+      if (this.drug.y_r && this.$p.y_transform && !this.$p.y_transform.auto) {
         this.comp.$emit('sidebar-transform', {
           grid_id: this.id,
-          range: [this.drug.y_r[0] - offset, this.drug.y_r[1] - offset]
+          range: ls ? range || this.drug.y_r : [this.drug.y_r[0] - offset, this.drug.y_r[1] - offset]
         });
       }
 
@@ -6926,15 +7298,11 @@ var grid_Grid = /*#__PURE__*/function () {
           d.args[0].overlay_id = d.args[2];
           this.uxs.push(d.args[0]); // this.rerender++
         }
-      }
-
-      if (d.event === 'close-interface') {
+      } else if (d.event === 'close-interface') {
         this.uxs = this.uxs.filter(function (x) {
           return x.uuid !== d.args[0];
         });
-      }
-
-      if (d.event === 'modify-interface') {
+      } else if (d.event === 'modify-interface') {
         var ux = this.uxs.filter(function (x) {
           return x.uuid === d.args[0];
         });
@@ -6942,9 +7310,7 @@ var grid_Grid = /*#__PURE__*/function () {
         if (ux.length) {
           this.modify(ux[0], d.args[1]);
         }
-      }
-
-      if (d.event === 'hide-interface') {
+      } else if (d.event === 'hide-interface') {
         var _ux = this.uxs.filter(function (x) {
           return x.uuid === d.args[0];
         });
@@ -6955,9 +7321,7 @@ var grid_Grid = /*#__PURE__*/function () {
             hidden: true
           });
         }
-      }
-
-      if (d.event === 'show-interface') {
+      } else if (d.event === 'show-interface') {
         var _ux2 = this.uxs.filter(function (x) {
           return x.uuid === d.args[0];
         });
@@ -6967,6 +7331,8 @@ var grid_Grid = /*#__PURE__*/function () {
             hidden: false
           });
         }
+      } else {
+        return d;
       }
     },
     modify: function modify(ux) {
@@ -7613,7 +7979,7 @@ UxWrappervue_type_template_id_4bc32070_render._withStripped = true
 // CONCATENATED MODULE: ./src/components/UxWrapper.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_UxWrappervue_type_script_lang_js_ = (UxWrappervue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/UxWrapper.vue?vue&type=style&index=0&lang=css&
-var UxWrappervue_type_style_index_0_lang_css_ = __webpack_require__(36);
+var UxWrappervue_type_style_index_0_lang_css_ = __webpack_require__(37);
 
 // CONCATENATED MODULE: ./src/components/UxWrapper.vue
 
@@ -7803,7 +8169,7 @@ var mouse_Mouse = /*#__PURE__*/function () {
 // Usuful stuff for creating overlays. Include as mixin
 
 /* harmony default export */ var mixins_overlay = ({
-  props: ['id', 'num', 'interval', 'cursor', 'colors', 'layout', 'sub', 'data', 'settings', 'grid_id', 'font', 'config', 'meta'],
+  props: ['id', 'num', 'interval', 'cursor', 'colors', 'layout', 'sub', 'data', 'settings', 'grid_id', 'font', 'config', 'meta', 'tf'],
   mounted: function mounted() {
     // Main chart?
     var main = this.$props.sub === this.$props.data;
@@ -7858,6 +8224,10 @@ var mouse_Mouse = /*#__PURE__*/function () {
 
       if (event === 'change-settings' || event === 'object-selected' || event === 'new-shader' || event === 'new-interface' || event === 'remove-tool') {
         args.push(this.grid_id, this.id);
+
+        if (this.$props.settings.$uuid) {
+          args.push(this.$props.settings.$uuid);
+        }
       }
 
       if (event === 'new-interface') {
@@ -8613,6 +8983,7 @@ Segment_component.options.__file = "src/components/overlays/Segment.vue"
 /* harmony default export */ var Segment = (Segment_component.exports);
 // CONCATENATED MODULE: ./src/components/js/layout_cnv.js
 
+
 // Claculates postions and sizes for candlestick
 // and volume bars for the given subset of data
 
@@ -8635,10 +9006,12 @@ function layout_cnv(self) {
       avg_w,
       mid,
       prev = undefined; // Subset interval against main interval
-  // TODO: interval detection can be incorrect in IB mode
 
-  var interval2 = utils.detect_interval(sub);
-  var ratio = interval2 / $p.interval;
+  var _new_interval = new_interval(layout, $p, sub),
+      _new_interval2 = slicedToArray_default()(_new_interval, 2),
+      interval2 = _new_interval2[0],
+      ratio = _new_interval2[1];
+
   var px_step2 = layout.px_step * ratio;
   var splitter = px_step2 > 5 ? 1 : 0; // A & B are current chart tranformations:
   // A === scale,  B === Y-axis shift
@@ -8652,14 +9025,15 @@ function layout_cnv(self) {
     }
 
     x1 = prev || Math.floor(mid - px_step2 * 0.5);
-    x2 = Math.floor(mid + px_step2 * 0.5) - 0.5;
+    x2 = Math.floor(mid + px_step2 * 0.5) - 0.5; // TODO: add log scale support
+
     candles.push({
       x: mid,
       w: layout.px_step * $p.config.CANDLEW * ratio,
-      o: p[1] * layout.A + layout.B,
-      h: p[2] * layout.A + layout.B,
-      l: p[3] * layout.A + layout.B,
-      c: p[4] * layout.A + layout.B,
+      o: Math.floor(p[1] * layout.A + layout.B),
+      h: Math.floor(p[2] * layout.A + layout.B),
+      l: Math.floor(p[3] * layout.A + layout.B),
+      c: Math.floor(p[4] * layout.A + layout.B),
       raw: p
     });
     volume.push({
@@ -8703,8 +9077,11 @@ function layout_vol(self) {
       mid,
       prev = undefined; // Subset interval against main interval
 
-  var interval2 = utils.detect_interval(sub);
-  var ratio = interval2 / $p.interval;
+  var _new_interval3 = new_interval(layout, $p, sub),
+      _new_interval4 = slicedToArray_default()(_new_interval3, 2),
+      interval2 = _new_interval4[0],
+      ratio = _new_interval4[1];
+
   var px_step2 = layout.px_step * ratio;
   var splitter = px_step2 > 5 ? 1 : 0; // A & B are current chart tranformations:
   // A === scale,  B === Y-axis shift
@@ -8731,6 +9108,24 @@ function layout_vol(self) {
 
   return volume;
 }
+
+function new_interval(layout, $p, sub) {
+  // Subset interval against main interval
+  if (!layout.ti_map.ib) {
+    var interval2 = $p.tf || utils.detect_interval(sub);
+    var ratio = interval2 / $p.interval;
+  } else {
+    if ($p.tf) {
+      var ratio = $p.tf / layout.ti_map.tf;
+      var interval2 = ratio;
+    } else {
+      var interval2 = utils.detect_interval(sub);
+      var ratio = interval2 / $p.interval;
+    }
+  }
+
+  return [interval2, ratio];
+}
 // CONCATENATED MODULE: ./src/components/primitives/candle.js
 
 
@@ -8749,8 +9144,9 @@ var candle_CandleExt = /*#__PURE__*/function () {
   createClass_default()(CandleExt, [{
     key: "draw",
     value: function draw(data) {
-      var body_color = data.c <= data.o ? this.style.colorCandleUp : this.style.colorCandleDw;
-      var wick_color = data.c <= data.o ? this.style.colorWickUp : this.style.colorWickDw;
+      var green = data.raw[4] >= data.raw[1];
+      var body_color = green ? this.style.colorCandleUp : this.style.colorCandleDw;
+      var wick_color = green ? this.style.colorWickUp : this.style.colorWickDw;
       var wick_color_sm = this.style.colorWickSm;
       var w = Math.max(data.w, 1);
       var hw = Math.max(Math.floor(w * 0.5), 1);
@@ -8765,8 +9161,8 @@ var candle_CandleExt = /*#__PURE__*/function () {
       if (data.w > 1.5 || data.o === data.c) {
         this.ctx.fillStyle = body_color; // TODO: Move common calculations to layout.js
 
-        var s = data.c >= data.o ? 1 : -1;
-        this.ctx.fillRect(Math.floor(data.x - hw - 1), Math.floor(data.o - 1), Math.floor(hw * 2 + 1), Math.floor(s * Math.max(h, max_h)));
+        var s = green ? 1 : -1;
+        this.ctx.fillRect(Math.floor(data.x - hw - 1), data.c, Math.floor(hw * 2 + 1), s * Math.max(h, max_h));
       } else {
         this.ctx.strokeStyle = body_color;
         this.ctx.beginPath();
@@ -8867,9 +9263,9 @@ var price_Price = /*#__PURE__*/function () {
       if (!this.shader) this.init_shader();
       var layout = this.comp.$props.layout;
       var last = this.comp.$props.meta.last;
-      var color = last[4] >= last[1] ? this.green() : this.red();
-      var y = layout.$2screen(last[4]) - 1; // TODO: make more precise 
-
+      var dir = last[4] >= last[1];
+      var color = dir ? this.green() : this.red();
+      var y = layout.$2screen(last[4]) + (dir ? 1 : 0);
       ctx.strokeStyle = color;
       ctx.setLineDash([1, 1]);
       ctx.beginPath();
@@ -8887,7 +9283,7 @@ var price_Price = /*#__PURE__*/function () {
       var y = layout.$2screen(last[4]);
       var cndl = layout.c_magnet(last[0]);
       return {
-        y: Math.floor(cndl.c) - 1.5,
+        y: Math.floor(cndl.c) - 0.5,
         price: last[4],
         color: last[4] >= last[1] ? this.green() : this.red()
       };
@@ -9692,80 +10088,6 @@ var pin_Pin = /*#__PURE__*/function () {
 }();
 
 
-// CONCATENATED MODULE: ./src/stuff/math.js
-// Math/Geometry
-/* harmony default export */ var math = ({
-  // Distance from point to line
-  // p1 = point, (p2, p3) = line
-  point2line: function point2line(p1, p2, p3) {
-    var _this$tri = this.tri(p1, p2, p3),
-        area = _this$tri.area,
-        base = _this$tri.base;
-
-    return Math.abs(this.tri_h(area, base));
-  },
-  // Distance from point to segment
-  // p1 = point, (p2, p3) = segment
-  point2seg: function point2seg(p1, p2, p3) {
-    var _this$tri2 = this.tri(p1, p2, p3),
-        area = _this$tri2.area,
-        base = _this$tri2.base; // Vector projection
-
-
-    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
-
-    var l1 = Math.max(-proj, 0); // Distance from right pin
-
-    var l2 = Math.max(proj - base, 0); // Normal
-
-    var h = Math.abs(this.tri_h(area, base));
-    return Math.max(h, l1, l2);
-  },
-  // Distance from point to ray
-  // p1 = point, (p2, p3) = ray
-  point2ray: function point2ray(p1, p2, p3) {
-    var _this$tri3 = this.tri(p1, p2, p3),
-        area = _this$tri3.area,
-        base = _this$tri3.base; // Vector projection
-
-
-    var proj = this.dot_prod(p1, p2, p3) / base; // Distance from left pin
-
-    var l1 = Math.max(-proj, 0); // Normal
-
-    var h = Math.abs(this.tri_h(area, base));
-    return Math.max(h, l1);
-  },
-  tri: function tri(p1, p2, p3) {
-    var area = this.area(p1, p2, p3);
-    var dx = p3[0] - p2[0];
-    var dy = p3[1] - p2[1];
-    var base = Math.sqrt(dx * dx + dy * dy);
-    return {
-      area: area,
-      base: base
-    };
-  },
-
-  /* Area of triangle:
-          p1
-        /    \
-      p2  _  p3
-  */
-  area: function area(p1, p2, p3) {
-    return p1[0] * (p2[1] - p3[1]) + p2[0] * (p3[1] - p1[1]) + p3[0] * (p1[1] - p2[1]);
-  },
-  // Triangle height
-  tri_h: function tri_h(area, base) {
-    return area / base;
-  },
-  // Dot product of (p2, p3) and (p2, p1)
-  dot_prod: function dot_prod(p1, p2, p3) {
-    var v1 = [p3[0] - p2[0], p3[1] - p2[1]];
-    var v2 = [p1[0] - p2[0], p1[1] - p2[1]];
-    return v1[0] * v2[0] + v1[1] * v2[1];
-  }
-});
 // CONCATENATED MODULE: ./src/components/primitives/seg.js
 
 
@@ -10221,7 +10543,9 @@ function Gridvue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == nul
       event: 'register-tools',
       args: tools
     });
-    this.$on('custom-event', this.emit_ux_event);
+    this.$on('custom-event', function (e) {
+      return _this.on_ux_event(e, 'grid');
+    });
   },
   mounted: function mounted() {
     var _this2 = this;
@@ -10316,7 +10640,8 @@ function Gridvue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == nul
               cls: comp,
               type: d.type,
               data: d.data,
-              settings: d.settings
+              settings: d.settings,
+              tf: d.tf
             });
             count[d.type] = 0;
           }
@@ -10335,6 +10660,7 @@ function Gridvue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == nul
             type: x.type,
             data: x.data,
             settings: x.settings,
+            tf: x.tf,
             num: i,
             grid_id: _this5.$props.grid_id,
             meta: _this5.$props.meta
@@ -10354,7 +10680,8 @@ function Gridvue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == nul
       };
     },
     emit_ux_event: function emit_ux_event(e) {
-      this.on_ux_event(e, 'grid');
+      var e_pass = this.on_ux_event(e, 'grid');
+      if (e_pass) this.$emit('custom-event', e);
     }
   },
   computed: {
@@ -10418,7 +10745,7 @@ function Gridvue_type_script_lang_js_arrayLikeToArray(arr, len) { if (len == nul
           _this7.renderer.propagate('keyup', event);
         },
         'keydown': function keydown(event) {
-          if (!_this7.is_active) return;
+          if (!_this7.is_active) return; // TODO: is this neeeded?
 
           _this7.renderer.propagate('keydown', event);
         },
@@ -10468,6 +10795,7 @@ function sidebar_arrayLikeToArray(arr, len) { if (len == null || len > arr.lengt
 
 
 
+
 var PANHEIGHT;
 
 var sidebar_Sidebar = /*#__PURE__*/function () {
@@ -10510,11 +10838,14 @@ var sidebar_Sidebar = /*#__PURE__*/function () {
           _this.zoom = 1.0;
         }
 
+        _this.y_range = [_this.layout.$_hi, _this.layout.$_lo];
         _this.drug = {
           y: event.center.y,
-          z: _this.zoom
+          z: _this.zoom,
+          mid: math.log_mid(_this.y_range, _this.layout.height),
+          A: _this.layout.A,
+          B: _this.layout.B
         };
-        _this.y_range = [_this.layout.$_hi, _this.layout.$_lo];
       });
       mc.on('panmove', function (event) {
         if (_this.drug) {
@@ -10685,12 +11016,30 @@ var sidebar_Sidebar = /*#__PURE__*/function () {
   }, {
     key: "calc_range",
     value: function calc_range() {
+      var _this2 = this;
+
       var z = this.zoom / this.drug.z;
       var zk = (1 / z - 1) / 2;
       var range = this.y_range.slice();
       var delta = range[0] - range[1];
-      range[0] = range[0] + delta * zk;
-      range[1] = range[1] - delta * zk;
+
+      if (!this.layout.grid.logScale) {
+        range[0] = range[0] + delta * zk;
+        range[1] = range[1] - delta * zk;
+      } else {
+        var px_mid = this.layout.height / 2;
+        var new_hi = px_mid - px_mid * (1 / z);
+        var new_lo = px_mid + px_mid * (1 / z); // Use old mapping to get a new range
+
+        var f = function f(y) {
+          return math.exp((y - _this2.drug.B) / _this2.drug.A);
+        };
+
+        var copy = range.slice();
+        range[0] = f(new_hi);
+        range[1] = f(new_lo);
+      }
+
       return range;
     }
   }, {
@@ -10848,7 +11197,7 @@ var Legendvue_type_template_id_34724886_render = function() {
       _vm._l(this.indicators, function(ind) {
         return _c(
           "div",
-          { staticClass: "t-vue-ind", attrs: { id: ind.id } },
+          { staticClass: "t-vue-ind" },
           [
             _c("span", { staticClass: "t-vue-iname" }, [
               _vm._v(_vm._s(ind.name))
@@ -11009,7 +11358,7 @@ LegendButtonvue_type_template_id_1ad87362_render._withStripped = true
 // CONCATENATED MODULE: ./src/components/LegendButton.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_LegendButtonvue_type_script_lang_js_ = (LegendButtonvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/LegendButton.vue?vue&type=style&index=0&lang=css&
-var LegendButtonvue_type_style_index_0_lang_css_ = __webpack_require__(38);
+var LegendButtonvue_type_style_index_0_lang_css_ = __webpack_require__(39);
 
 // CONCATENATED MODULE: ./src/components/LegendButton.vue
 
@@ -11067,7 +11416,7 @@ LegendButton_component.options.__file = "src/components/LegendButton.vue"
 // CONCATENATED MODULE: ./src/components/ButtonGroup.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ButtonGroupvue_type_script_lang_js_ = (ButtonGroupvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/ButtonGroup.vue?vue&type=style&index=0&lang=css&
-var ButtonGroupvue_type_style_index_0_lang_css_ = __webpack_require__(40);
+var ButtonGroupvue_type_style_index_0_lang_css_ = __webpack_require__(41);
 
 // CONCATENATED MODULE: ./src/components/ButtonGroup.vue
 
@@ -11135,20 +11484,8 @@ ButtonGroup_component.options.__file = "src/components/ButtonGroup.vue"
 //
 
 /* harmony default export */ var Legendvue_type_script_lang_js_ = ({
-  // If this component is called ChartLegend, then why is it named Legend.vue? It should be named as ChartLegend.
-  // A ChartLegend consists of a list of ButtonGroup?
   name: 'ChartLegend',
-  // TODO: What are all these props? What are typical values for these props?
-  props: [// HN: This seems to have
-  //      common.layout.grids[id]
-  //      common.layout.grids[id].height
-  //      common.layout.grids[id].offset
-  //      common.layout.grids[id].prec
-  //      common.data -> seems to be whole data.json structure??
-  'common', // HN: This seems to have
-  //      values.ohlcv   -> ohlcv value at the current cursor
-  'values', // HN: This seems to be some kind of Id in the this.$props.common.layout.grids[id]
-  'grid_id', 'meta_props'],
+  props: ['common', 'values', 'grid_id', 'meta_props'],
   components: {
     ButtonGroup: ButtonGroup
   },
@@ -11159,28 +11496,25 @@ ButtonGroup_component.options.__file = "src/components/ButtonGroup.vue"
       }
 
       var prec = this.layout.prec;
-      return [this.$props.values.ohlcv[1].toFixed(prec), this.$props.values.ohlcv[2].toFixed(prec), this.$props.values.ohlcv[3].toFixed(prec), this.$props.values.ohlcv[4].toFixed(prec), this.$props.values.ohlcv[5] ? this.$props.values.ohlcv[5].toFixed(0) : 'n/a'];
+      return [this.$props.values.ohlcv[1].toFixed(prec), this.$props.values.ohlcv[2].toFixed(prec), this.$props.values.ohlcv[3].toFixed(prec), this.$props.values.ohlcv[4].toFixed(prec), this.$props.values.ohlcv[5] ? this.$props.values.ohlcv[5].toFixed(2) : 'n/a'];
     },
     indicators: function indicators() {
       var _this = this;
 
       var values = this.$props.values;
+      var f = this.format;
       var types = {};
       return this.json_data.filter(function (x) {
         return x.settings.legend !== false && !x.main;
       }).map(function (x) {
         if (!(x.type in types)) types[x.type] = 0;
-        var id = x.type + "_".concat(types[x.type]++); // HN: This seems to generated id = XSpline_1
-
+        var id = x.type + "_".concat(types[x.type]++);
         return {
           v: 'display' in x.settings ? x.settings.display : true,
           name: x.name || id,
-          // HN: Example: EMA200
           index: _this.json_data.indexOf(x),
-          // an index in the list of iindicators
           id: id,
-          // HN: XPline_1
-          values: values ? _this.format(id, values) : _this.n_a(1),
+          values: values ? f(id, values) : _this.n_a(1),
           unk: !(id in (_this.$props.meta_props || {}))
         };
       });
@@ -11234,7 +11568,7 @@ ButtonGroup_component.options.__file = "src/components/ButtonGroup.vue"
 // CONCATENATED MODULE: ./src/components/Legend.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Legendvue_type_script_lang_js_ = (Legendvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/Legend.vue?vue&type=style&index=0&lang=css&
-var Legendvue_type_style_index_0_lang_css_ = __webpack_require__(42);
+var Legendvue_type_style_index_0_lang_css_ = __webpack_require__(43);
 
 // CONCATENATED MODULE: ./src/components/Legend.vue
 
@@ -11444,7 +11778,7 @@ Legend_component.options.__file = "src/components/Legend.vue"
 // CONCATENATED MODULE: ./src/components/Section.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Sectionvue_type_script_lang_js_ = (Sectionvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/Section.vue?vue&type=style&index=0&lang=css&
-var Sectionvue_type_style_index_0_lang_css_ = __webpack_require__(44);
+var Sectionvue_type_style_index_0_lang_css_ = __webpack_require__(45);
 
 // CONCATENATED MODULE: ./src/components/Section.vue
 
@@ -11719,7 +12053,7 @@ var botbar_Botbar = /*#__PURE__*/function () {
 // CONCATENATED MODULE: ./src/components/Botbar.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Botbarvue_type_script_lang_js_ = (Botbarvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/Botbar.vue?vue&type=style&index=0&lang=css&
-var Botbarvue_type_style_index_0_lang_css_ = __webpack_require__(46);
+var Botbarvue_type_style_index_0_lang_css_ = __webpack_require__(47);
 
 // CONCATENATED MODULE: ./src/components/Botbar.vue
 var Botbar_render, Botbar_staticRenderFns
@@ -11986,7 +12320,8 @@ var ti_mapping_TI = /*#__PURE__*/function () {
       try {
         var i = utils.fast_nearest(this.sub, t);
         var tk = this.sub[i[1]][0];
-        return i[1] - (tk - t) / this.tf;
+        console.log('here', i);
+        return this.ss + i[1] - (tk - t) / this.tf;
       } catch (e) {}
 
       return undefined;
@@ -12093,7 +12428,8 @@ var ti_mapping_TI = /*#__PURE__*/function () {
     },
     calc_interval: function calc_interval() {
       if (this.ohlcv.length < 2) return;
-      this.interval_ms = utils.detect_interval(this.ohlcv);
+      var tf = utils.parse_tf(this.chart.tf);
+      this.interval_ms = tf || utils.detect_interval(this.ohlcv);
       this.interval = this.$props.ib ? 1 : this.interval_ms;
     },
     set_ytransform: function set_ytransform(s) {
@@ -12167,7 +12503,8 @@ var ti_mapping_TI = /*#__PURE__*/function () {
           name: d.name,
           data: _this.ti_map.parse(utils.fast_filter(d.data, _this.ti_map.i2t(_this.range[0] - _this.interval), _this.ti_map.i2t(_this.range[1]))[0] || []),
           settings: d.settings || _this.settings_ov,
-          grid: d.grid || {}
+          grid: d.grid || {},
+          tf: utils.parse_tf(d.tf)
         };
       });
     },
@@ -12530,7 +12867,7 @@ ToolbarItemvue_type_template_id_227b3c2e_render._withStripped = true
 // CONCATENATED MODULE: ./src/components/ToolbarItem.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ToolbarItemvue_type_script_lang_js_ = (ToolbarItemvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/ToolbarItem.vue?vue&type=style&index=0&lang=css&
-var ToolbarItemvue_type_style_index_0_lang_css_ = __webpack_require__(48);
+var ToolbarItemvue_type_style_index_0_lang_css_ = __webpack_require__(49);
 
 // CONCATENATED MODULE: ./src/components/ToolbarItem.vue
 
@@ -12627,7 +12964,7 @@ ToolbarItem_component.options.__file = "src/components/ToolbarItem.vue"
 // CONCATENATED MODULE: ./src/components/Toolbar.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Toolbarvue_type_script_lang_js_ = (Toolbarvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/Toolbar.vue?vue&type=style&index=0&lang=css&
-var Toolbarvue_type_style_index_0_lang_css_ = __webpack_require__(50);
+var Toolbarvue_type_style_index_0_lang_css_ = __webpack_require__(51);
 
 // CONCATENATED MODULE: ./src/components/Toolbar.vue
 
@@ -12887,6 +13224,7 @@ Toolbar_component.options.__file = "src/components/Toolbar.vue"
       }
     },
     "goto": function goto(t) {
+      // TODO: limit goto & setRange (out of data error)
       if (this.chart_props.ib) {
         var ti_map = this.$refs.chart.ti_map;
         t = ti_map.smth2i(t);
@@ -12895,6 +13233,13 @@ Toolbar_component.options.__file = "src/components/Toolbar.vue"
       this.$refs.chart["goto"](t);
     },
     setRange: function setRange(t1, t2) {
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map;
+        t1 = ti_map.smth2i(t1);
+        t2 = ti_map.smth2i(t2);
+        console.log(t1, t2);
+      }
+
       this.$refs.chart.setRange(t1, t2);
     },
     getRange: function getRange() {
@@ -12909,7 +13254,17 @@ Toolbar_component.options.__file = "src/components/Toolbar.vue"
       return this.$refs.chart.range;
     },
     getCursor: function getCursor() {
-      return this.$refs.chart.cursor;
+      var cursor = this.$refs.chart.cursor;
+
+      if (this.chart_props.ib) {
+        var ti_map = this.$refs.chart.ti_map;
+        var copy = Object.assign({}, cursor);
+        copy.i = copy.t;
+        copy.t = ti_map.i2t(copy.t);
+        return copy;
+      }
+
+      return cursor;
     },
     legend_button: function legend_button(event) {
       this.$emit('legend-button-click', event);
@@ -13019,6 +13374,8 @@ var dc_events_DCEvents = /*#__PURE__*/function () {
           break;
 
         case 'tool-selected':
+          if (!args[0]) break; // TODO: Quick fix, investigate
+
           if (args[0].split(':')[0] === 'System') {
             this.system_tool(args[0].split(':')[1]);
             break;
@@ -13173,7 +13530,7 @@ var dc_events_DCEvents = /*#__PURE__*/function () {
         }
       });
       sett.$uuid = "".concat(id, "-").concat(utils.now());
-      this.tv.$set(this.data, 'selected', id);
+      this.tv.$set(this.data, 'selected', sett.$uuid);
       this.add_trash_icon();
     } // Remove selected / Remove all, etc
 
@@ -13199,8 +13556,7 @@ var dc_events_DCEvents = /*#__PURE__*/function () {
       var settings = args[0];
       delete settings.id;
       var grid_id = args[1];
-      var q = this.layer_query(args[1], args[2]);
-      this.merge("".concat(q, ".settings"), settings);
+      this.merge("".concat(args[3], ".settings"), settings);
     } // Lock the scrolling mechanism
 
   }, {
@@ -13226,19 +13582,11 @@ var dc_events_DCEvents = /*#__PURE__*/function () {
 
       this.tv.$set(this.data, 'selected', null);
       if (!args.length) return;
-      var q = this.layer_query(args[0], args[1]);
-      this.tv.$set(this.data, 'selected', q);
-      this.merge("".concat(q, ".settings"), {
+      this.tv.$set(this.data, 'selected', args[2]);
+      this.merge("".concat(args[2], ".settings"), {
         $selected: true
       });
       this.add_trash_icon();
-    } // Form query for given grid and layer id
-
-  }, {
-    key: "layer_query",
-    value: function layer_query(grid_id, id) {
-      var side = grid_id ? 'offchart' : 'onchart';
-      return "".concat(side, ".").concat(id.replace('_', ''));
     }
   }, {
     key: "add_trash_icon",
@@ -13592,7 +13940,7 @@ var dc_core_DCCore = /*#__PURE__*/function (_DCEvents) {
       var path = tuple[1] || '';
       var field = tuple[2];
       var arr = this.data[side].filter(function (x) {
-        return x.id && x.name && (x.id === query || x.id.includes(path) || x.name === query || x.name.includes(path));
+        return x.id && x.name && x.settings && (x.id === query || x.id.includes(path) || x.name === query || x.name.includes(path) || query.includes(x.settings.$uuid));
       });
 
       if (field) {
@@ -13927,7 +14275,8 @@ var datacube_DataCube = /*#__PURE__*/function (_DCCore) {
       var tick = data['price'];
       var volume = data['volume'] || 0;
       var candle = data['candle'];
-      var tf = utils.detect_interval(ohlcv);
+      var tfx = utils.parse_tf(this.data.chart.tf);
+      var tf = tfx || utils.detect_interval(ohlcv);
       var t_next = last[0] + tf;
       var now = utils.now();
       var t = now >= t_next ? now - now % tf : last[0];
@@ -14024,6 +14373,64 @@ var datacube_DataCube = /*#__PURE__*/function (_DCCore) {
 }(dc_core_DCCore);
 
 
+// CONCATENATED MODULE: ./src/mixins/interface.js
+// Html interface, shown on top of the grid.
+// Can be static (a tooltip) or interactive,
+// e.g. a control panel.
+/* harmony default export */ var mixins_interface = ({
+  props: ['ux', 'updater', 'colors', 'wrapper'],
+  mounted: function mounted() {
+    this._$emit = this.$emit;
+    this.$emit = this.custom_event;
+    if (this.init) this.init();
+  },
+  methods: {
+    close: function close() {
+      this.$emit('custom-event', {
+        event: 'close-interface',
+        args: [this.$props.ux.uuid]
+      });
+    },
+    // TODO: emit all the way to the uxlist
+    // add apply the changes there
+    modify: function modify(obj) {
+      this.$emit('custom-event', {
+        event: 'modify-interface',
+        args: [this.$props.ux.uuid, obj]
+      });
+    },
+    custom_event: function custom_event(event) {
+      if (event.split(':')[0] === 'hook') return;
+
+      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        args[_key - 1] = arguments[_key];
+      }
+
+      this._$emit('custom-event', {
+        event: event,
+        args: args
+      });
+    }
+  },
+  computed: {
+    overlay: function overlay() {
+      return this.$props.ux.overlay;
+    },
+    layout: function layout() {
+      return this.overlay.layout;
+    },
+    uxr: function uxr() {
+      return this.$props.ux;
+    }
+  },
+  data: function data() {
+    return {};
+  }
+});
+// EXTERNAL MODULE: ./src/components/primitives/ray.js
+var ray = __webpack_require__(27);
+var ray_default = /*#__PURE__*/__webpack_require__.n(ray);
+
 // CONCATENATED MODULE: ./src/index.js
 
 
@@ -14033,6 +14440,22 @@ var datacube_DataCube = /*#__PURE__*/function (_DCCore) {
 
 
 
+
+
+
+
+
+
+
+var primitives = {
+  Candle: candle_CandleExt,
+  Volbar: volbar_VolbarExt,
+  Line: line_Line,
+  Pin: pin_Pin,
+  Price: price_Price,
+  Ray: ray_default.a,
+  Seg: seg_Seg
+};
 
 TradingVue.install = function (Vue) {
   Vue.component(TradingVue.name, TradingVue);
@@ -14049,7 +14472,10 @@ if (typeof window !== 'undefined' && window.Vue) {
     Volbar: volbar_VolbarExt,
     layout_cnv: layout_cnv,
     layout_vol: layout_vol,
-    DataCube: datacube_DataCube
+    DataCube: datacube_DataCube,
+    Tool: mixins_tool,
+    Interface: mixins_interface,
+    primitives: primitives
   };
 }
 
