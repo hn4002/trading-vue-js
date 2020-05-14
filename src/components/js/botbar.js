@@ -41,6 +41,7 @@ export default class Botbar {
         this.ctx.fillStyle = this.$p.colors.colorText
         this.ctx.beginPath()
 
+        // layout.botbar.xs has the list of x axis points to mark at the bottom
         for (var p of this.layout.botbar.xs) {
 
             let lbl = this.format_date(p[1][0])
@@ -100,6 +101,21 @@ export default class Botbar {
         t += new Date(t).getTimezoneOffset() * MINUTE
         let d = new Date(t)
 
+        // If it is a daily chart or a weekly chart, we need month name as well
+        try {
+            if (this.comp.$store.state.currentTimeFrame == "daily" || this.comp.$store.state.currentTimeFrame == "weekly") {
+                if (d.getMonth() == 0 && d.getDate() < 15) {
+                    return d.toISOString().slice(0, 10)
+                } else {
+                    return MONTHMAP[d.getMonth()] + "-" + d.getDate()
+                }
+            }
+        } catch(err) {
+            console.log(err)
+        }
+
+        // If is not daily or weekly chart, then follow the normal code
+
         if (Utils.year_start(t) === t) return d.getFullYear()
         if (Utils.month_start(t) === t) return MONTHMAP[d.getMonth()]
         if (Utils.day_start(t) === t) return d.getDate()
@@ -107,7 +123,6 @@ export default class Botbar {
         let h = Utils.add_zero(d.getHours())
         let m = Utils.add_zero(d.getMinutes())
         return h + ":" + m
-
     }
 
     format_cursor_x() {
@@ -119,6 +134,16 @@ export default class Botbar {
         t += new Date(t).getTimezoneOffset() * MINUTE
         let d = new Date(t)
 
+        // If it is a daily chart or a weekly chart, return the date in this format: yyyy-mm-dd
+        try {
+            if (this.comp.$store.state.currentTimeFrame == "daily" || this.comp.$store.state.currentTimeFrame == "weekly") {
+                return d.toISOString().slice(0, 10)
+            }
+        } catch(err) {
+            console.log(err)
+        }
+
+        // If is not daily or weekly chart, then follow the normal code
         if (ti === YEAR) {
             return d.getFullYear()
         }
@@ -139,7 +164,6 @@ export default class Botbar {
         }
 
         return `${date}  ${time}`
-
     }
 
     // Highlights the begining of a time interval
