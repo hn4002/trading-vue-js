@@ -10,7 +10,7 @@ const MAX_INT = Number.MAX_SAFE_INTEGER
 
 
 // master_grid - ref to the master grid
-function GridMaker(id, params, master_grid = null) {
+function GridMaker(id, params, comp, master_grid = null) {
 
 
     let {
@@ -19,6 +19,7 @@ function GridMaker(id, params, master_grid = null) {
     } = params
 
     var self = { ti_map }
+
     var lm = layers_meta[id]
     var y_range_fn = null
     var ls = grid.logScale
@@ -76,7 +77,7 @@ function GridMaker(id, params, master_grid = null) {
 
     }
 
-    function calc_sidebar() {
+    function calc_sidebar(comp) {
 
         if (sub.length < 2) {
             self.prec = 0
@@ -92,7 +93,7 @@ function GridMaker(id, params, master_grid = null) {
         // calculates max and measures the sidebar length
         // from it:
 
-        self.prec = calc_precision(sub)
+        self.prec = calc_precision(sub, comp)
         let subn = sub.filter(x => typeof x[1] === 'number')
         let lens = subn.map(x => x[1].toFixed(self.prec).length)
         lens.push(self.$_hi.toFixed(self.prec).length)
@@ -104,7 +105,17 @@ function GridMaker(id, params, master_grid = null) {
     }
 
     // Calculate $ precision for the Y-axis
-    function calc_precision(data) {
+    function calc_precision(data, comp) {
+        // First see if it is a daily or weekly bar, if so use a fixed precision of 2
+        try {
+            if (comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly") {
+                return 2
+            }
+        } catch(err) {
+            console.log(err)
+        }
+
+        // Other use cases
 
         var max_r = 0, max_l = 0
 
@@ -415,7 +426,7 @@ function GridMaker(id, params, master_grid = null) {
     }
 
     calc_$range()
-    calc_sidebar()
+    calc_sidebar(comp)
 
     return {
         // First we need to calculate max sidebar width

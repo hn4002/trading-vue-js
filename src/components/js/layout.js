@@ -16,6 +16,7 @@ function Layout(params) {
         chart, sub, offsub, interval, range, ctx, layers_meta,
         ti_map, $props:$p, y_transforms: y_ts
     } = params
+    this.comp = params
 
     let mgrid = chart.grid || {}
 
@@ -108,7 +109,7 @@ function Layout(params) {
         ti_map, height: hs[0], y_t: y_ts[0],
         grid: mgrid
     }
-    let gms = [new GridMaker(0, specs)]
+    let gms = [new GridMaker(0, specs, this.comp)]
 
     // Sub grids
     for (var [i, { data, grid }] of offsub.entries()) {
@@ -116,7 +117,7 @@ function Layout(params) {
         specs.height = hs[i + 1]
         specs.y_t = y_ts[i + 1]
         specs.grid = grid || {}
-        gms.push(new GridMaker(i + 1, specs, gms[0].get_layout()))
+        gms.push(new GridMaker(i + 1, specs, this.comp, gms[0].get_layout()))
     }
 
     // Max sidebar among all grinds
