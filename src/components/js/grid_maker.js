@@ -254,7 +254,15 @@ function GridMaker(id, params, comp, master_grid = null) {
 
             // First see if it is a daily or weekly bar, if so use a fixed precision of 2
             try {
-                if (comp.$store.state.currentTimeFrame == "daily" && sub.length > 2) {
+                if ((comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly")&& sub.length > 2) {
+                    let isDaily = false
+                    let isWeekly = false
+                    if (comp.$store.state.currentTimeFrame == "daily") {
+                        isDaily = true
+                    }
+                    if (comp.$store.state.currentTimeFrame == "weekly") {
+                        isWeekly = true
+                    }
                     self.t_step = -100  // This one does not make sense as this will vary by month for daily chart. Setting it to something absurd, so we can catch errors if something depends on it.
                     self.xs = []
                     const dt = range[1] - range[0]
@@ -272,8 +280,10 @@ function GridMaker(id, params, comp, master_grid = null) {
                         d = new Date(t)
                         let currMonth = d.getMonth()
                         if (prevMonth != currMonth) {
-                            let x = Math.floor((p[0] - range[0]) * r)
-                            self.xs.push([x, p])
+                            if (isDaily || (isWeekly && currMonth % 3 == 0)) {
+                                let x = Math.floor((p[0] - range[0]) * r)
+                                self.xs.push([x, p])
+                            }
                         }
                         prevMonth = currMonth
                     }

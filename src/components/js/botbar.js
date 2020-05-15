@@ -55,7 +55,7 @@ export default class Botbar {
                 this.ctx.globalAlpha = 0.85
             }
             this.ctx.textAlign = 'left'
-            this.ctx.fillText(lbl, p[0] + 3, 18)
+            this.ctx.fillText(lbl, p[0] + 5, 16)
             this.ctx.globalAlpha = 1
 
         }
