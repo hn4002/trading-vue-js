@@ -48,14 +48,14 @@ export default class Botbar {
 
             if (p[0] > width - sb) continue
 
-            this.ctx.moveTo(p[0] - 0.5, 0)
-            this.ctx.lineTo(p[0] - 0.5, 4.5)
+            this.ctx.moveTo(p[0] + 0.5, 0)
+            this.ctx.lineTo(p[0] + 0.5, height)
 
             if (!this.lbl_highlight(p[1][0])) {
                 this.ctx.globalAlpha = 0.85
             }
-            this.ctx.textAlign = 'center'
-            this.ctx.fillText(lbl, p[0], 18)
+            this.ctx.textAlign = 'left'
+            this.ctx.fillText(lbl, p[0] + 3, 18)
             this.ctx.globalAlpha = 1
 
         }
@@ -105,7 +105,7 @@ export default class Botbar {
         try {
             if (this.comp.$store.state.currentTimeFrame == "daily" || this.comp.$store.state.currentTimeFrame == "weekly") {
                 if (d.getMonth() == 0 && d.getDate() < 15) {
-                    return d.toISOString().slice(0, 10)
+                    return d.getFullYear() + "-" + MONTHMAP[d.getMonth()] + "-" + d.getDate()
                 } else {
                     return MONTHMAP[d.getMonth()] + "-" + d.getDate()
                 }

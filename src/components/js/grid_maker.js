@@ -5,7 +5,7 @@ import math from '../../stuff/math.js'
 import layout_fn from './layout_fn.js'
 import log_scale from './log_scale.js'
 
-const { TIMESCALES, $SCALES, WEEK } = Const
+const { TIMESCALES, $SCALES, MINUTE, WEEK } = Const
 const MAX_INT = Number.MAX_SAFE_INTEGER
 
 
@@ -246,11 +246,42 @@ function GridMaker(id, params, comp, master_grid = null) {
         return Math.pow(yratio, 1/n)
     }
 
-    function grid_x() {
+    function grid_x(comp) {
 
         // If this is a subgrid, no need to calc a timeline,
         // we just borrow it from the master_grid
         if (!master_grid) {
+
+            // First see if it is a daily or weekly bar, if so use a fixed precision of 2
+            try {
+                if (comp.$store.state.currentTimeFrame == "daily" && sub.length > 2) {
+                    self.t_step = -100  // This one does not make sense as this will vary by month for daily chart. Setting it to something absurd, so we can catch errors if something depends on it.
+                    self.xs = []
+                    const dt = range[1] - range[0]
+                    const r = self.spacex / dt
+
+                    let p = sub[0]
+                    let t =  self.ti_map.i2t(p[0])
+                    t += new Date(t).getTimezoneOffset() * MINUTE
+                    let d = new Date(t)
+                    let prevMonth = d.getMonth()
+                    for (var i = 1; i < sub.length; i++) {
+                        p = sub[i]
+                        t =  self.ti_map.i2t(p[0])
+                        t += new Date(t).getTimezoneOffset() * MINUTE
+                        d = new Date(t)
+                        let currMonth = d.getMonth()
+                        if (prevMonth != currMonth) {
+                            let x = Math.floor((p[0] - range[0]) * r)
+                            self.xs.push([x, p])
+                        }
+                        prevMonth = currMonth
+                    }
+                    return
+                }
+            } catch(err) {
+                console.log(err)
+            }
 
             self.t_step = time_step()
             self.xs = []
@@ -434,7 +465,7 @@ function GridMaker(id, params, comp, master_grid = null) {
         // them
         create: () => {
             calc_positions()
-            grid_x()
+            grid_x(comp)
             if (grid.logScale) {
                 grid_y_log()
             } else {
