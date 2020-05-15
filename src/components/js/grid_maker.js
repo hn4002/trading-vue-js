@@ -257,14 +257,8 @@ function GridMaker(id, params, comp, master_grid = null) {
             // For weekly chart, grid on the first trading day of the quarter.
             try {
                 if ((comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly") && sub.length > 2) {
-                    let isDaily = false
-                    let isWeekly = false
-                    if (comp.$store.state.currentTimeFrame == "daily") {
-                        isDaily = true
-                    }
-                    if (comp.$store.state.currentTimeFrame == "weekly") {
-                        isWeekly = true
-                    }
+                    let isDaily = (comp.$store.state.currentTimeFrame == "daily")
+                    let isWeekly = (comp.$store.state.currentTimeFrame == "weekly")
                     self.t_step = -100  // This one does not make sense as this will vary by month for daily chart. Setting it to
                                         // something absurd, so we can catch errors if something depends on it.
                     self.xs = []
