@@ -252,9 +252,11 @@ function GridMaker(id, params, comp, master_grid = null) {
         // we just borrow it from the master_grid
         if (!master_grid) {
 
-            // First see if it is a daily or weekly bar, if so use a fixed precision of 2
+            // First see if it is a daily or weekly timeframe, if so then use a custom grid.
+            // For daily chart: grid on the first trading day of the month.
+            // For weekly chart, grid on the first trading day of the quarter.
             try {
-                if ((comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly")&& sub.length > 2) {
+                if ((comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly") && sub.length > 2) {
                     let isDaily = false
                     let isWeekly = false
                     if (comp.$store.state.currentTimeFrame == "daily") {
@@ -263,7 +265,8 @@ function GridMaker(id, params, comp, master_grid = null) {
                     if (comp.$store.state.currentTimeFrame == "weekly") {
                         isWeekly = true
                     }
-                    self.t_step = -100  // This one does not make sense as this will vary by month for daily chart. Setting it to something absurd, so we can catch errors if something depends on it.
+                    self.t_step = -100  // This one does not make sense as this will vary by month for daily chart. Setting it to
+                                        // something absurd, so we can catch errors if something depends on it.
                     self.xs = []
                     const dt = range[1] - range[0]
                     const r = self.spacex / dt
