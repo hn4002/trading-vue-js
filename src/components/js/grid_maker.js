@@ -108,8 +108,10 @@ function GridMaker(id, params, comp, master_grid = null) {
     function calc_precision(data, comp) {
         // First see if it is a daily or weekly bar, if so use a fixed precision of 2
         try {
-            if (comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly") {
-                return 2
+            if (comp.$store) {
+                if (comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly") {
+                    return 2
+                }
             }
         } catch(err) {
             console.log(err)
@@ -256,35 +258,37 @@ function GridMaker(id, params, comp, master_grid = null) {
             // For daily chart: grid on the first trading day of the month.
             // For weekly chart, grid on the first trading day of the quarter.
             try {
-                if ((comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly") && sub.length > 2) {
-                    let isDaily = (comp.$store.state.currentTimeFrame == "daily")
-                    let isWeekly = (comp.$store.state.currentTimeFrame == "weekly")
-                    self.t_step = -100  // This one does not make sense as this will vary by month for daily chart. Setting it to
-                                        // something absurd, so we can catch errors if something depends on it.
-                    self.xs = []
-                    const dt = range[1] - range[0]
-                    const r = self.spacex / dt
+                if (comp.$store) {
+                    if ((comp.$store.state.currentTimeFrame == "daily" || comp.$store.state.currentTimeFrame == "weekly") && sub.length > 2) {
+                        let isDaily = (comp.$store.state.currentTimeFrame == "daily")
+                        let isWeekly = (comp.$store.state.currentTimeFrame == "weekly")
+                        self.t_step = -100  // This one does not make sense as this will vary by month for daily chart. Setting it to
+                                            // something absurd, so we can catch errors if something depends on it.
+                        self.xs = []
+                        const dt = range[1] - range[0]
+                        const r = self.spacex / dt
 
-                    let p = sub[0]
-                    let t =  self.ti_map.i2t(p[0])
-                    t += new Date(t).getTimezoneOffset() * MINUTE
-                    let d = new Date(t)
-                    let prevMonth = d.getMonth()
-                    for (var i = 1; i < sub.length; i++) {
-                        p = sub[i]
-                        t =  self.ti_map.i2t(p[0])
+                        let p = sub[0]
+                        let t = self.ti_map.i2t(p[0])
                         t += new Date(t).getTimezoneOffset() * MINUTE
-                        d = new Date(t)
-                        let currMonth = d.getMonth()
-                        if (prevMonth != currMonth) {
-                            if (isDaily || (isWeekly && currMonth % 3 == 0)) {
-                                let x = Math.floor((p[0] - range[0]) * r)
-                                self.xs.push([x, p])
+                        let d = new Date(t)
+                        let prevMonth = d.getMonth()
+                        for (var i = 1; i < sub.length; i++) {
+                            p = sub[i]
+                            t = self.ti_map.i2t(p[0])
+                            t += new Date(t).getTimezoneOffset() * MINUTE
+                            d = new Date(t)
+                            let currMonth = d.getMonth()
+                            if (prevMonth != currMonth) {
+                                if (isDaily || (isWeekly && currMonth % 3 == 0)) {
+                                    let x = Math.floor((p[0] - range[0]) * r)
+                                    self.xs.push([x, p])
+                                }
                             }
+                            prevMonth = currMonth
                         }
-                        prevMonth = currMonth
+                        return
                     }
-                    return
                 }
             } catch(err) {
                 console.log(err)

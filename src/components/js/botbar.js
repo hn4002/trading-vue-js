@@ -104,11 +104,13 @@ export default class Botbar {
         // If it is a daily chart or a weekly chart, we need month name as well.
         // If it is first trading day of the year, then need year also.
         try {
-            if (this.comp.$store.state.currentTimeFrame == "daily" || this.comp.$store.state.currentTimeFrame == "weekly") {
-                if (d.getMonth() == 0 && d.getDate() < 15) {
-                    return d.getFullYear() + "-" + MONTHMAP[d.getMonth()] + "-" + d.getDate()
-                } else {
-                    return MONTHMAP[d.getMonth()] + "-" + d.getDate()
+            if (this.comp.$store) {
+                if (this.comp.$store.state.currentTimeFrame == "daily" || this.comp.$store.state.currentTimeFrame == "weekly") {
+                    if (d.getMonth() == 0 && d.getDate() < 15) {
+                        return d.getFullYear() + "-" + MONTHMAP[d.getMonth()] + "-" + d.getDate()
+                    } else {
+                        return MONTHMAP[d.getMonth()] + "-" + d.getDate()
+                    }
                 }
             }
         } catch(err) {
@@ -137,8 +139,10 @@ export default class Botbar {
 
         // If it is a daily chart or a weekly chart, return the date in this format: yyyy-mm-dd
         try {
-            if (this.comp.$store.state.currentTimeFrame == "daily" || this.comp.$store.state.currentTimeFrame == "weekly") {
-                return d.toISOString().slice(0, 10)
+            if (this.comp.$store) {
+                if (this.comp.$store.state.currentTimeFrame == "daily" || this.comp.$store.state.currentTimeFrame == "weekly") {
+                    return d.toISOString().slice(0, 10)
+                }
             }
         } catch(err) {
             console.log(err)
