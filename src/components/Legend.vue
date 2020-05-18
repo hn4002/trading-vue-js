@@ -14,26 +14,28 @@
         C<span class="t-vue-lspan" >{{ohlcv[3]}}</span>
         V<span class="t-vue-lspan" >{{ohlcv[4]}}</span>
     </div>
-    <div class="t-vue-ind" v-for="ind in this.indicators" v-bind:id="ind.id">
-        <span class="t-vue-iname">{{ind.name}}</span>
-        <button-group
-            v-bind:buttons="common.buttons"
-            v-bind:ov_id="ind.id"
-            v-bind:grid_id="grid_id"
-            v-bind:index="ind.index"
-            v-bind:tv_id="common.tv_id"
-            v-bind:display="ind.v"
-            v-on:legend-button-click="button_click">
-        </button-group>
-        <span class="t-vue-ivalues" v-if="ind.v">
-            <span class="t-vue-lspan t-vue-ivalue"
-                  v-for="v in ind.values" :style="{ color: v.color }">
-                {{v.value}}
+    <div class="t-vue-indicators">
+        <div class="t-vue-ind" v-for="ind in this.indicators" v-bind:id="ind.id">
+            <span class="t-vue-iname">{{ind.name}}</span>
+            <button-group
+                v-bind:buttons="common.buttons"
+                v-bind:ov_id="ind.id"
+                v-bind:grid_id="grid_id"
+                v-bind:index="ind.index"
+                v-bind:tv_id="common.tv_id"
+                v-bind:display="ind.v"
+                v-on:legend-button-click="button_click">
+            </button-group>
+            <span class="t-vue-ivalues" v-if="ind.v">
+                <span class="t-vue-lspan t-vue-ivalue"
+                      v-for="v in ind.values" :style="{ color: v.color }">
+                    {{v.value}}
+                </span>
             </span>
-        </span>
-        <span v-if="ind.unk" class="t-vue-unknown">
-            (Unknown type)
-        </span>
+            <span v-if="ind.unk" class="t-vue-unknown">
+                (Unknown type)
+            </span>
+        </div>
     </div>
 </div>
 </template>
@@ -71,14 +73,34 @@ export default {
             }
             const prec = this.layout.prec
 
+            let volumeDisplay = 'n/a'
+            if (this.$props.values.ohlcv[5]) {
+                let volume = this.$props.values.ohlcv[5]
+                if (volume > 1000*1000*1000) {
+                    volumeDisplay = (volume / 1000000000.0).toFixed(2) + " B"
+                } else if (volume > 100*1000*1000) {
+                        volumeDisplay = (volume / 1000000.0).toFixed(0) + " M"
+                } else if (volume > 10*1000*1000) {
+                    volumeDisplay = (volume / 1000000.0).toFixed(1) + " M"
+                } else if (volume > 1000*1000) {
+                    volumeDisplay = (volume / 1000000.0).toFixed(2) + " M"
+                } else if (volume > 100*1000) {
+                    volumeDisplay = (volume / 1000.0).toFixed(0) + " K"
+                } else if (volume > 10*1000) {
+                    volumeDisplay = (volume / 1000.0).toFixed(1) + " K"
+                } else if (volume > 1000) {
+                    volumeDisplay = (volume / 1000.0).toFixed(2) + " K"
+                } else {
+                    volumeDisplay = volume.toFixed(0)
+                }
+            }
+
             return [
                 this.$props.values.ohlcv[1].toFixed(prec),
                 this.$props.values.ohlcv[2].toFixed(prec),
                 this.$props.values.ohlcv[3].toFixed(prec),
                 this.$props.values.ohlcv[4].toFixed(prec),
-                this.$props.values.ohlcv[5] ?
-                    this.$props.values.ohlcv[5].toFixed(0):
-                    'n/a'
+                volumeDisplay
             ]
         },
         indicators() {
